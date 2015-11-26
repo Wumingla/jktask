@@ -1,0 +1,187 @@
+body{
+	background: #7BB3D4;
+}
+.container{
+	width: 932px;
+	height: 602px;
+	margin:0 auto;
+	margin-top: 50px;
+}
+/*整体容器*/
+table{
+	width: 900px;
+	height: 602px;
+	font-size: 12px;
+	background: #fff;
+}
+/*表格*/
+thead .top{
+	background: #008cee;
+	height: 60px;
+	position: relative;
+}
+thead .top .search{
+	width: 180px;
+	height: 32px;
+	border-radius: 20px;
+	border:none;
+	padding-left: 20px;
+	background: #0280d8;
+	font-size: 14px;
+	position: absolute;
+	top: 14px;
+	right: 20px;
+	color: #222;
+	-webkit-transition:background 3s,width 2s;
+	-moz-transition:background 3s,width 2s;
+	-ms-transition:background 3s,width 2s;
+	-o-transition:background 3s,width 2s;
+}
+::-webkit-input-placeholder { 
+	color:#fff;
+	font-weight: 500;
+	font-size: 12px;
+}
+:-moz-placeholder { 
+	color:#fff;
+	font-weight: 500;
+	font-size: 12px;
+}
+::-moz-placeholder { 
+	color:#fff;
+	font-weight: 500;
+	font-size: 12px;
+}
+:-ms-input-placeholder { 
+	color:#fff;
+	font-weight: 500;
+	font-size: 12px;
+}
+thead .top .search:hover{
+	width: 220px;
+	background: #fff;
+}
+/*表头搜索栏*/
+.table tbody tr .navs{
+	background: #e4eaf4;
+	padding: 0;
+}
+tbody tr td ul{
+	padding: 0;
+	text-align: center;
+
+}
+tbody tr td a li{
+	text-align: left;
+	list-style: none;
+	padding: 0;
+	height: 50px;
+	padding: 15px;
+	font-size: 13px;
+	color: #707275;
+}
+tbody tr td a li:hover{
+	background: #CCE4F7;
+	border-left: 3px solid #008CEE;
+}
+tbody tr td a:hover{
+	text-decoration: none;
+}
+tbody tr td ul a img{
+	width: 41px;
+	height: 41px;
+	margin-top: 14px;
+	margin-bottom: 5px;
+}
+tbody tr td ul a p{
+	font-size: 12px;
+}
+tbody tr td ul .ctrl img{
+	display: inline-block;
+	width: 18px;
+	height: 18px;
+	margin-top: 10px;
+}
+tbody tr td ul .ctrl{
+	margin-top: 200px;
+}
+/*导航栏*/
+.msn{
+	background: #D5EDFE;
+	cursor: pointer;
+}
+.msn img{
+	width: 38px;
+	margin-right: 8px;
+}
+.msn span{
+	color: #bdbebf;
+	float: right;
+}
+.msner img{
+	width: 38px;
+	margin-right: 10px;
+}
+.message p{
+	color: #8e97a1;
+	margin-left: 45px;
+	margin-top: 20px;
+	position: relative;
+	top: 11px;
+}
+.message{
+	position: relative;
+}
+.message img{
+	width: 33px;
+}
+.msncon{
+	width: 295px;
+	height: 38px;
+	padding: 5px 5px 5px 15px;
+	border:1px solid #e1e0e4;
+	line-height:26px;
+	font-size: 13px;
+	color: #222;
+	border-radius: 8px;
+	position: absolute;
+	top: 60px;
+	left: 48px;
+}
+/*信息内容*/
+.table tbody tr .write{
+	padding: 0;
+	position: relative;
+}
+.table tbody tr .write textarea{
+	height: 84px;
+	border: none;
+	padding: 30px 0 5px 15px;
+}
+.table tbody tr .write .wicon{
+	height: 18px;
+	position: absolute;
+	top: 5px;
+	left: 15px;
+}
+.table tbody tr .write .wicon img{
+	margin-right: 8px;
+}
+.table tbody tr .send{
+	padding: 0;
+	text-align: center;
+}
+.table tbody tr .send a{
+	width: 78px;
+	height: 83px;
+	line-height: 83px;
+	font-size: 13px;
+	color: #ccc;
+}
+.table tbody tr .send a:hover{
+	color: #008CEE;
+}
+.table tbody tr .send:hover{
+	background: #E4EAF4;
+}
+/*填写与发送表单*/

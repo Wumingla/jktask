@@ -1,0 +1,191 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>前端面试题收集</title>
+	<link rel="stylesheet" type="text/css" href="fs.css">
+</head>
+<body>
+	<div class="wrapper">
+		<div class="header">
+			<div class="logo1"></div>
+			<div class="slogan">
+				<h1>Web初级前端面试题汇总</h1>
+			</div>
+		</div>
+		<!-- 头部LOGO和slogan -->
+		<div class="main">
+			<div class="container">
+				<div class="con">
+					<ul>
+						<li>				    
+							<span>1.对WEB标准以及W3C的理解与认识</span>
+							<div>
+								<p>
+									标签闭合、标签小写、不乱嵌套、提高搜索机器人搜索几率、使用外链css和js脚本、结构行为表现的分离、文件下载与页面速度更快、内容能被更多的用户所访问、内容能被更广泛的设备所访问、更少的代码和组件，容易维护、改版方便，不需要变动页面内容、提供打印版本而不需要复制内容、提高网站易用性;
+								</p>
+							</div>
+						</li>
+						<li>				    
+							<span>2.xhtml和html有什么区别</span>
+							<div>
+								<p>
+									HTML是一种基本的WEB网页设计语言，XHTML是一个基于XML的置标语言.最主要的不同：XHTML 元素必须被正确地嵌套。XHTML 元素必须被关闭。标签名必须用小写字母。XHTML 文档必须拥有根元素。
+								</p>
+							</div>
+						</li>
+						<li>				    
+							<span>3.Doctype? 严格模式与混杂模式-如何触发这两种模式，区分它们有何意义?</span>
+							<div>
+								<p>
+									用于声明文档使用那种规范(html/Xhtml)一般为 严格、过度、基于框架的html文档,加入XMl声明可触发，解析方式更改为IE5.5 拥有IE5.5的bug
+								</p>
+							</div>
+						</li>
+						<li>				    
+							<span>4.行内元素有哪些?块级元素有哪些?CSS的盒模型?</span>
+							<div>
+								<p>
+									块级元素：div、p、h1、h2、h3、h4、form、ul。行内元素:a、b、br、i、span、input、select。Css盒模型:内容，border 、margin、padding。
+								</p>
+							</div>
+						</li>
+						<li>				    
+							<span>6.CSS选择符有哪些?哪些属性可以继承?优先级算法如何计算?内联和important哪个优先级高?</span>
+							<div>
+								<p>
+									标签选择符、类选择符、id选择符。继承不如指定,Id>class>标签选择，后者优先级高。
+								</p>
+							</div>
+						</li>
+						<li>				    
+							<span>7.前端页面有哪三层构成，分别是什么?作用是什么?</span>
+							<div>
+								<p>
+									结构层：Html，表示层：CSS，行为层:js。
+								</p>
+							</div>
+						</li>
+						<li>				    
+							<span>8.css的基本语句构成是?</span>
+							<div>
+								<p>
+									选择器{属性1:值1;属性2:值2;……}      
+								</p>
+							</div>
+						</li>
+						<li>				    
+							<span>9.你做的页面在哪些流览器测试过?这些浏览器的内核分别是什么?</span>
+							<div>
+								<p>
+									Ie(Ie内核) 火狐(Gecko) 谷歌(webkit) opear(Presto)。
+								</p>
+							</div>
+						</li>
+						<li>				    
+							<span>10.写出几种IE6 BUG的解决方法</span>
+							<div>
+								<p>
+									1、双边距BUG float引起的 使用display。
+									2、3像素问题 使用float引起的 使用dislpay:inline -3px。
+									3、超链接hover 点击后失效 使用正确的书写顺序 link visited hover active。
+									4、Ie z-index问题 给父级添加position:relative。
+									5、Png 透明 使用js代码 改。
+									6、Min-height 最小高度 !Important 解决。
+									7、select 在ie6下遮盖 使用iframe嵌套。
+									8、为什么没有办法定义1px左右的宽度容器(IE6默认的行高造成的，使用over:hidden,zoom:0.08 line-height:1px)。
+									9、ie 6 不支持!important。
+								</p>
+							</div>
+						</li>
+						<li>				    
+							<span>11.img标签上title与alt属性的区别是什么?</span>
+							<div>
+								<p>
+									Alt:当图片不显示时所使用得文字代表。title: 为该属性提供信息。
+								</p>
+							</div>
+						</li>
+						<li>				    
+							<span>12.描述css reset的作用和用途。</span>
+							<div>
+								<p>
+									内联、内嵌、外链、导入。区别 ：同时加载。前者无兼容性，后者CSS2.1以下浏览器不支持。Link 支持使用javascript改变样式，后者不可。
+								</p>
+							</div>
+						</li>
+						<li>				    
+							<span>13.解释css sprites，如何使用。</span>
+							<div>
+								<p>
+									Css 精灵,把一堆小的图片整合到一张大的图片上，减轻服务器对图片的请求数量。
+								</p>
+							</div>
+						</li>
+						<li>				    
+							<span>14.浏览器标准模式和怪异模式之间的区别是什么?</span>
+							<div>
+								<p>
+									盒子模型,渲染模式的不同.使用 window.top.document.compatMode 可显示为什么模式。
+								</p>
+							</div>
+						</li>
+						<li>				    
+							<span>15.你如何对网站的文件和资源进行优化?期待的解决方案包括：</span>
+							<div>
+								<p>
+									文件合并、文件最小化/文件压缩、使用CDN托管、缓存的使用。
+								</p>
+							</div>
+						</li>
+						<li>				    
+							<span>16.什么是语义化的HTML?</span>
+							<div>
+								<p>
+									直观的认识标签 对于搜索引擎的抓取有好处。
+								</p>
+							</div>
+						</li>
+						<li>				    
+							<span>17.清除浮动的几种方式，各自的优缺点</span>
+							<div>
+								<p>
+									1.使用空标签清除浮动 clear:both(优点为理论上能清楚任何标签，缺点是增加无意义的标签)。2.使用overflow:auto(空标签元素清除浮动而不得不增加无意代码的弊端,使用zoom:1用于兼容IE)3.是用afert伪元素清除浮动(用于非IE浏览器)
+								</p>
+							</div>
+						</li>
+						<li>				    
+							<span>18.css hack</span>
+							<div>
+								<p>_marging \\IE 6，+margin \\IE 7，，Marging:0 auto \9 \\所有IE。
+								</p>
+							</div>
+						</li>
+					</ul>
+				</div>
+
+			</div>
+			<!-- 题目信息 -->
+			<div class="navs">
+				<div>
+					<ul>
+						<li><a href="#">首页</a></li>
+						<li><a href="#">HTML</a></li>
+						<li><a href="#">CSS</a></li>
+						<li><a href="#">JS</a></li>
+						<li><a href="#">JAVA</a></li>
+						<li><a href="#">IOS</a></li>						
+					</ul>
+				</div>
+			</div>
+			<!-- 导航 -->
+			<div class="clear"></div>	
+		</div>
+		<!-- 主体内容 -->
+		<div class="footer">
+			<div class="logo2"></div>
+		</div>
+		<!-- 尾部 -->
+	</div>
+</body>
+</html>

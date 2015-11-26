@@ -1,0 +1,106 @@
+body{
+	font-size:12px;
+	font-family:arial; 
+}
+.pcnav{
+	height: 58px;
+	position: relative;
+}
+.pcnav ul{
+	float: right;
+	position: relative;
+	list-style-type: none;
+	margin: 20px 5px 5px 0px;
+	padding: 0;
+	font-family: Tahoma;
+	font-size: 13px;
+}
+.pcnav ul li{
+	display: inline;
+	padding-left: 15px
+}
+.nav_1{
+	font-weight: bold;
+}
+.nav_2{
+	padding: 3px;
+	background:#38f;
+}
+.nav_2:hover{
+	background: #fff;
+}
+.pcnav ul li a{
+	color: black;
+}
+.pcnav ul li .nav_2{
+	color: #fff;
+}
+.pcnav ul li a:hover{
+	color:blue;
+}
+.pclogo{
+	height: 129px;
+	text-align: center;
+	width: 100%;
+	margin-top: 47px;
+}
+.pclogo img{
+	width: 270px;
+	height: 129px;
+}
+.pcsearch{
+	width: 645px;
+	height: 59px;
+	margin: 0 auto;
+}
+.pcsearch_text{
+	width: 528px;
+	height: 30px;
+	margin: 24px 0 0 0;
+	padding-left: 10px;
+	padding-top: 1px;
+	padding-bottom: 1px;
+	float: left;
+	font-size: 14px;
+
+}
+.pcsearch_btn{
+	width: 100px;height:36px;
+	margin: 24px 0 0 0;
+	border: 0;
+	background: #3385ff;
+	color: #FFFFFF;
+	font-size: 14px;
+	_margin-left:-3px;
+	border-bottom: 1px solid #2d78f4;
+}
+.pcsearch_btn:hover{
+	background: #317ef3;
+	border-bottom: 1px solid #2868c8;
+	box-shadow: 1px 1px #ccc;
+}
+.pcfoot{
+	width: 720px;
+	height: 39px;
+	position: absolute;
+	bottom: 44px;
+	left: 50%;
+	margin-left: -360px;
+	text-align: center;
+}
+.foot_a1 a{
+	color: #00C;
+	text-decoration:underline;
+}
+.foot_a2{
+	color: #666;
+	margin-top: 10px;
+	height: 20px;
+}
+.foot_a2 a{
+	color: #666;
+	text-decoration: underline;
+}
+.foot_a2 img{
+	height: 11px;
+}

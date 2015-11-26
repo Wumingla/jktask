@@ -1,0 +1,492 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+a{
+  text-decoration: none;
+}
+.header{
+  height: 54px;
+  position: relative;	
+}
+.user{
+  position: absolute;
+  display: inline-block;
+  top: 3px;
+  right: 0px;
+  width: 20px;
+  height: 20px;
+  padding: 7px;
+}
+.weather{
+  position: absolute;
+  display: inline-block;
+  top: 4px;
+  left: 0px;
+  padding: 0 9px;
+  height: 48px;
+}
+.temperature{
+  display: inline-block;
+  height: 30px;
+  width: 40px;
+  font-size: 30px;
+  color: #818388;
+  line-height:30px;
+  font-weight: 600;
+}
+.weathericon{
+  display: inline-block;
+  position: relative;
+  top: 5px;
+  height: 30px;
+  width: 30px;
+}
+.weatherstatus{
+  display: inline-block;
+  width: 50px;
+  height: 30px;
+  position: relative;
+  padding: 0 6px;
+  top: 1px;
+  color: #7e818a;
+  font-size: 11px;
+}
+.statusselect{
+  position: relative;
+  display: inline-block;
+  border:4px solid transparent;
+  border-top-color: #717077;
+}
+
+.mlogo{
+  padding: 17px 0 15px 0;
+  text-align: center;
+  height: 55px;
+}
+.mlogo img{
+  height: 55px;
+}
+
+.msearch form{
+  position: relative;
+  height: 42px;
+  border:1px solid #8d9394;
+  margin-left: 10px;
+  margin-right: 10px;
+  border-radius:1px;
+  -webkit-box-shadow:0 1px 1px 0 #dfdfdf;
+  -moz-box-shadow:0 1px 1px 0 #dfdfdf;
+  -ms-box-shadow:0 1px 1px 0 #dfdfdf;
+  -o-box-shadow:0 1px 1px 0 #dfdfdf;
+  background:#fff;
+}
+
+textarea{
+  position: relative;
+  box-sizing:border-box;
+  height: 42px;
+  width: 100%;
+  border:none;
+  padding:7px 42px 7px 6px;
+  overflow:hidden;
+  line-height: 28px;
+  font-size: 18px;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+button{
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 78px;
+  height: 42px;
+  background: #ccc;
+  background: -webkit-linear-gradient(top,#f9f9f9,#e7e9eb);
+  background: -moz-linear-gradient(top,#f9f9f9,#e7e9eb);
+  background: -ms-linear-gradient(top,#f9f9f9,#e7e9eb);
+  background: -o-linear-gradient(top,#f9f9f9,#e7e9eb);
+  color: #46484b;
+  -webkit-box-shadow:0 0 0 1px #fff inset;
+  -moz-box-shadow:0 0 0 1px #fff inset;
+  -ms-box-shadow:0 0 0 1px #fff inset;
+  -o-box-shadow:0 0 0 1px #fff inset;
+  border:0;
+  border-left: 1px solid #8d9394;
+  line-height: 42px;
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing:-1px;
+}
+.voice{
+  display: inline-block;
+  width: 39px;
+  height: 39px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin-right: 79px;
+}
+.voiceicon{
+  position: absolute;
+  width: 20px;
+  height: 37px;
+  display: inline-block;
+}
+.voiceicon img{
+  position: relative;
+  top: 8px;
+  width: 15px;
+}
+.voicemore{
+  position: absolute;
+  top: 18px;
+  border:4px solid transparent;
+  right: 8px;
+  border-top-color: #717077;
+}
+
+.navs{
+  margin: 17px 0 14px 0;
+  height: 43px;
+}
+.navs a{
+  display: inline-block;
+  width: 16%;
+  height: 43px;
+  float: left;
+  text-align: center;
+}
+.navs a img{
+  width: 20px;
+  height: 20px;
+  margin-bottom: 4px;
+}
+.navs a p{
+  font-size: 13px;
+  color: #262626;
+}
+.container{
+  position: relative;
+  border:0 solid #eeeef0;
+  border-width: 1px 0;
+  padding: 2px 10px 10px 10px;
+  margin-bottom: 10px;
+  background: #f6f6f6;
+}
+.plus{
+  border:1px solid #d9dde2;
+  margin-top: 8px;
+  background: #fff;
+  height: 121px;
+  position: relative;
+}
+
+.plustitle{
+  position: relative;
+  text-align: left;
+  width: 100%;
+}
+.plustitle img{
+  width: 18px;
+  height: 18px;
+  position: absolute;
+  top: 10px;
+  left: 6px;
+}
+.plustitle a img{
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top: 10;
+  left: 100%;
+  margin-left: -40px;
+
+}
+.plustitle h2{
+  display: inline-block;
+  padding-left: 30px;
+  line-height: 40px;
+  font-size: 15px;
+  font-weight: 400;
+  color: #aaa;
+}
+.pluscon a{
+  display: inline-block;
+  float: left;
+  width: 25%;
+  height: 42px;
+  text-align: center;
+  line-height: 42px;
+  color: #262626;
+  font-size: 14px;
+}
+.pluscon a img{
+  position: relative;
+  top: 10px;
+}
+.plusnext{
+  position: absolute;
+  width: 82px;
+  height: 40px;
+  top: 0px;
+  right: 40px;
+  line-height: 40px;
+  font-size: 14px;
+  color: #262626;
+  text-indent: 30px;
+}
+.hotcon ul{
+  padding: 0 14px;
+  text-align: left;
+  font-size: 14px;
+  overflow: hidden;
+  position: relative;
+}
+.hotcon ul li{
+  display: inline-block;
+  width: 50%;
+  height: 42px;
+  line-height: 42px;
+  position: relative;
+  float: left;
+}
+.hot.plus{
+  border:1px solid #d9dde2;
+  margin-top: 8px;
+  background: #fff;
+  height: 166px;
+  position: relative;
+}
+.server.plus{
+  border:1px solid #d9dde2;
+  margin-top: 8px;
+  background: #fff;
+  height: 236px;
+  position: relative;
+}
+.gps{
+  height: 30px;
+  width: 100%;
+  position: relative;
+  display: inline-block;
+  font-size: 14px;
+  line-height: 30px;
+  color: #262626;
+  text-indent: 10px;
+}
+.gps button{
+  width: 68px;
+  height: 28px;
+  background: transparent;
+  border:none;
+  border:1px solid #d2d6dd;
+  line-height: 30px;
+  position: absolute;
+  right: 20px;
+  border-radius: 2px;
+  font-weight: 500;
+  text-indent: 20px;
+}
+.servercon {
+  display: block;
+  width: 100%;
+  height: 142px;
+  margin-top: 10px;
+  padding-bottom: 5px;
+  text-align: center;
+  font-size: 14px;
+  overflow: hidden;
+  position: relative;
+}
+.servercon ul li{
+  display: inline-block;
+  width: 25%;
+  height: 71px;
+  position: relative;
+  float: left;
+}
+.servercon ul li img{
+  width: 42px;
+  height: 42px;
+}
+.servercon ul li p{
+  font-size: 14px;
+  line-height: 18px;
+  height: 18px;
+  margin: 3px 0 8px 0;
+}
+.sc{
+  display: block;
+  width: 43px;
+  height: 43px;
+  background: #FFF;
+  margin:0 auto;
+}
+.sicon1{
+  background: #FFF url(../img/sbt.png) 0px -90px;
+  background-size: 43px;      
+}
+.sicon2{
+  background: #FFF url(../img/sbt.png) 0px 0px;
+  background-size: 43px;
+}
+.sicon3{
+  background: #FFF url(../img/sbt.png) 0px -47px;
+  background-size: 43px;
+}
+.sicon4{
+  background: #FFF url(../img/sbt.png) 0px -90px;
+  background-size: 43px;
+}
+.sicon5{
+  background: #FFF url(../img/sbt.png) 0px -181px;
+  background-size: 43px;
+}
+.sicon6{
+  background: #FFF url(../img/sbt.png) 0px 621px;
+  background-size: 43px;
+}
+.sicon7{
+  background: #FFF url(../img/sbt.png) 0px -492px;
+  background-size: 43px;
+}
+.sicon8{
+  background: #FFF url(../img/sbt.png) 0px -135px;
+  background-size: 43px;
+}
+
+
+.movie.plus{
+  height: 180px;
+}
+.moviecon{
+  margin-top: 5px;
+  padding-left: 12px;
+}
+.moviep{
+  display: inline-block;
+  width: 80px;
+  height: 119px;
+  float: left;
+}
+.moviep img{
+  width: 80px;
+  height: 119px;
+}
+.movieinfo{
+  display: inline-block;
+  position: relative;
+  height: 120px;
+  float: left;
+  margin-left:12px;
+}
+.movieinfo h2{
+  font-size: 16px;
+  font-weight: 400;
+}
+.movieinfo p{
+  font-size: 13px;
+  color: #777;
+  padding: 5px 0 10px 0;
+}
+.movieinfo p span{
+  color: #f60;
+}
+.movieinfo button{
+  width: 90px;
+  height: 37px;
+  background: #f60;
+  color: #fff;
+  border:none;
+  border-radius: 4px;
+  font-size: 14px;
+  line-height: 37px;
+  text-align: center;
+  font-weight: 400;
+  position: absolute;
+  left: 0;
+  top: 82px;
+}
+.movieinfo img{
+  width: 58px;
+  height: 18px;
+  position: absolute;
+  top: 0;
+  left: 50px;
+}
+.ctrlplus{
+  border:1px solid #d9dde2;
+  margin-top: 8px;
+  background: #fff;
+  height: 45px;
+  position: relative;
+  text-align: center;
+  font-size: 15px;
+  line-height: 45px;
+  color: #0058d2;
+}
+.ctrlplus img{
+  position: relative;
+  top: 3px;
+}
+.spread{
+  margin-top: 8px;
+  position: relative;
+}
+.spread ul li{
+  position: relative;
+  display: block;
+  padding-left: 12px;
+  font-size: 13px;
+  line-height: 33px;
+  height: 33px;
+}
+.spread ul li a{
+  color: #555;
+}
+.spread ul li img{
+  position: relative;
+  top: 2px;
+  width: 19px;
+}
+.mfootplus{
+  margin:20px 25 0 25px;
+}
+
+.mfootleft{
+  position: relative;
+  float: left;
+  display: inline-block;
+  width: 47%;
+  height: 24px;
+  line-height: 24px;
+  font-size: 13px;
+  color: #555;
+  border:1px solid #ececec;
+  border-radius: 2px;
+  text-align: center;
+}
+.mfootright{
+  position: relative;
+  float: right;
+  display: inline-block;
+  width: 47%;
+  height: 24px;
+  line-height: 24px;
+  font-size: 13px;
+  color: #555;
+  border:1px solid #ececec;
+  border-radius: 2px;
+  text-align: center;
+}
+.mfootcon{
+  display: block;
+  font-size: 10px;
+  text-align: center;
+  padding: 35px 0 13px 0;
+  line-height: 20px;
+}
+.mfootcon a{
+  color: #aaa;
+}
