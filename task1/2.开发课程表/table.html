@@ -1,0 +1,149 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>课程表</title>
+    <style type="text/css">
+        .con{
+            width:900px;
+            height:700px;
+            margin: 100px auto;
+            font-family: arial
+        }
+        .textmain{
+            text-align: center;
+        }
+        .anniu{
+            width: 100px;
+            height: 30px
+        }
+    </style>
+</head>
+<body>
+    <div class="con">
+        <form>
+            <table width="900" height="471" border="1" cellpadding="1" cellspacing="1">
+                <div class="header">
+                    <caption>
+                        <h1 >极客学院线下试听课程表</h1>
+                    </caption>
+                </div>
+                <div class="mainer">
+                    <tr>
+                        <th scope="col">时间</th>
+                        <th scope="col">星期一</th>
+                        <th scope="col">星期二</th>
+                        <th scope="col">星期三</th>
+                        <th scope="col">星期四</th>
+                        <th scope="col">星期五</th>
+                        <th scope="col">星期六</th>
+                        <th scope="col">星期天</th>
+                    </tr>
+                    <tr>
+                        <th scope="row">8:00~8:40</th>
+                        <td><div class="textmain">Android</div></td>
+                        <td><div class="textmain">Java</div></td>
+                        <td><div class="textmain">HTML5</div></td>
+                        <td><div class="textmain">Java  Web</div></td>
+                        <td><div class="textmain">PHP</div></td>
+                        <td><div class="textmain">iOS</div></td>
+                        <td><div class="textmain">C</div></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">9:00~9:40</th>
+                        <td><div class="textmain">Bootstrap</div></td>
+                        <td><div class="textmain">C++</div></td>
+                        <td><div class="textmain">Unity 3D</div></td>
+                        <td><div class="textmain">Egret</div></td>
+                        <td><div class="textmain">Swift</div></td>
+                        <td><div class="textmain">Cocos2d-x</div></td>
+                        <td><div class="textmain">WatchKit</div></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">10:00~10:40</th>
+                        <td><div class="textmain">GUI</div></td>
+                        <td><div class="textmain">Asp.Net</div></td>
+                        <td><div class="textmain">Web </div></td>
+                        <td><div class="textmain">Python </div></td>
+                        <td><div class="textmain">Docker</div></td>
+                        <td><div class="textmain">Ardunio</div></td>
+                        <td><div class="textmain">Unreal</div></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">11:00~11:40</th>
+                        <td><div class="textmain">SpriteKit 2D</div></td>
+                        <td><div class="textmain">Typescript</div></td>
+                        <td><div class="textmain">Cordova</div></td>
+                        <td><div class="textmain">mbed</div></td>
+                        <td><div class="textmain">RTOS</div></td>
+                        <td><div class="textmain">Axure</div></td>
+                        <td><div class="textmain">MongoDB</div></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">11:40~15:00</th>
+                        <td colspan="7"><div class="textmain">午休</div></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">15:00~15:40</th>
+                        <td><div class="textmain">PHP</div></td>
+                        <td><div class="textmain">iOS</div></td>
+                        <td><div class="textmain">C</div></td>
+                        <td><div class="textmain">Unreal</div></td>
+                        <td><div class="textmain">Android</div></td>
+                        <td><div class="textmain">Java</div></td>
+                        <td><div class="textmain">HTML5</div></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">16:00~16:40</th>
+                        <td><div class="textmain">Swift</div></td>
+                        <td><div class="textmain">Cocos2d-x</div></td>
+                        <td><div class="textmain">WatchKit</div></td>
+                        <td><div class="textmain">MongoDB</div></td>
+                        <td><div class="textmain">Bootstrap</div></td>
+                        <td><div class="textmain">C++</div></td>
+                        <td><div class="textmain">Unity 3D</div></td>
+                    </tr>
+                    <tr>
+                        <th rowspan="3" scope="row">试听报名</th>
+                        <td colspan="7">您的姓名：<input type="text" name="textfield" id="username" > 
+                          Email：
+                          <input type="email" name="email" id="email" > 
+                          性别：
+                          <select name="sex" id="sex" >
+                            <option value="boy">男</option>
+                            <option value="girl">女</option>
+                          </select>       
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="7">您上课的时间：
+                            <input type="checkbox" name="time" value="星期一" id="time1" >星期一
+                            <input type="checkbox" name="time" value="星期二" id="time2" >星期二
+                            <input type="checkbox" name="time" value="星期三" id="time3" >星期三
+                            <input type="checkbox" name="time" value="星期四" id="time4" >星期四
+                            <input type="checkbox" name="time" value="星期五" id="time5" >星期五
+                            <input type="checkbox" name="time" value="星期六" id="time6" >星期六
+                            <input type="checkbox" name="time" value="星期天" id="time7" >星期天
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="7">您是否自带电脑：
+                            <input type="radio" name="pc" value="yes" id="dai" >是的，我的大刀已饥渴难耐。
+                            <input type="radio" name="pc"  value="no" id="budai" >否，无形之刃最为致命。  
+                        </td>
+                    </tr>
+                </div>
+
+                <div class="footer">
+                    <tr>
+                        <th colspan="8" scope="row">
+                            <input type="reset" value="重置" class="anniu">
+                            <input type="submit" value="提交" class="anniu">
+                        </th>
+                    </tr>
+                </div>
+        </table>
+    </form>
+</div>
+</body>
+</html>
