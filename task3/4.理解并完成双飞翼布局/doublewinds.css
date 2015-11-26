@@ -1,0 +1,154 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-size: 12px;
+  font-family: Helvetica ;
+}
+.top{
+   height: 100px;
+   width: 80%;
+   margin-left: 100px;  	
+}
+.logo{
+    position: fixed;
+}
+
+.footer{
+   height: 10px;
+   background:#ff5f3e;
+   margin-left: 100px;
+}
+.main{
+
+   margin-left: 100px;
+}
+.left{
+   width: 220px;
+   height: 500px;   	
+   float: left;
+   margin-left: -100%;
+}
+.right{
+   background-color:#ff5f3e;
+   height: 320px;
+   width: 10px;
+   float: left;
+   margin-left: -10px;
+   overflow:hidden;
+}
+.middle{
+   float: left;
+   width: 100%;
+}
+.con{
+   margin-left: 220px;
+   margin-right: 10px;
+}
+.nav{
+    position: fixed;
+    width: 156px;
+    margin-top: 27px;
+    margin-left: 7px;
+    margin-left: 100px\9;
+}
+
+ul{
+   list-style: none;
+}
+ul.nav_1 a{
+   font-size:14px;
+   color: #606566;
+   line-height:21px;
+   padding: 9px;
+   text-decoration:none
+}
+ul.nav_2 a{
+   font-size: 13px;
+   line-height: 21px;
+   padding: 9px;
+   color: #606566;
+   text-decoration:none
+}
+li{
+   display: block;
+   height:39px;
+   overflow:hidden;
+}
+.nav_1{
+   text-indent: 7px;
+}
+.nav_2{
+   text-indent: 37px;
+}
+
+.nav_1 a:hover,.nav_2 a:hover,.box_mid:hover{
+   color: #ff5f3e;
+
+}
+
+.box:hover,.Abox:hover,.Bbox:hover{
+    border-color:  #ff5f3e;
+}
+.box{
+    display: inline-block;
+    width: 280px;
+    height: 230px;
+    border:3px solid #FFF;
+    margin-left: 20px;
+    margin-bottom: 40px;
+    float: left;
+
+}
+.box_up{
+    width: 280px;
+    height: 150px;
+    background: #f2f2f2;
+    overflow: hidden;
+}
+p{
+    display: block;
+    margin: 22px;
+    color: #888;
+    line-height: 24px;
+    text-indent: 28px;
+}
+.box_mid {
+    display: inline-block;
+    margin: 13px 0 0 17px;
+    height: 21px;
+    text-decoration:none;
+    overflow: hidden;
+    font-size: 14px;
+    color: #333;
+    white-space: nowrap;
+}
+.box_down{
+    margin: 11px 0 17px 17px;
+    font-size: 11px;
+    height: 18px;
+    width: 246px;
+    color: #999;
+}
+
+.Abox{
+    display: inline-block;
+    width: 580px;
+    height: 320px;
+    border:3px solid #FFF;
+    margin-left: 20px;
+    margin-bottom: 40px;
+    float: left;
+
+}
+.Bbox{
+    display: inline-block;
+    width: 280px;
+    height: 320px;
+    border:3px solid #FFF;
+    margin-left: 20px;
+    margin-bottom: 40px;
+    float: left;
+}
+.clear{
+    clear:both; height: 0; line-height: 0; font-size: 0
+}
