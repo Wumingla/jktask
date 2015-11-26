@@ -1,0 +1,125 @@
+/*全局重置*/
+*{
+	margin: 0;
+	padding: 0;
+}
+ul{
+	list-style: none;
+}
+/*框架*/
+.wrapper{
+	width: 1000px;
+	margin:0 auto;
+}
+.header{
+	height: 100px;
+}
+.header .logo1{
+	height: 0;
+	width: 0;
+	border-top: 100px solid #F50;
+	border-bottom: none;
+	border-left: none;
+	border-right: 100px solid #fff;
+	position: fixed;
+	top: 0;
+	margin-left: -100px;
+	margin-left: -500px\9;
+}
+.header .slogan{
+	margin-top: 100px;
+	margin-left: 500px;
+	height: 50px;
+	color: #888;
+	border-bottom: 1px solid #F50;
+	line-height: 50px;
+	text-align: right;
+}
+/*头部信息，LOGO和slogan*/
+.main{
+	margin-top: 8px;
+}
+.container{
+/*	height: 400px;*/
+	width: 100%;
+	position: relative;
+	float: left;
+}
+.main .container .con{
+	margin-left: 100px;
+	margin-left: 220px;
+	float: left;
+}
+.main .navs{
+	height: 400px;
+	width: 220px;
+	float: left;
+	margin-left: -100%;
+}
+/*双飞翼布局*/
+.main .navs div{
+	position: fixed;
+	width: 156px;
+	margin-top: 27px;
+	margin-left: 7px;
+	margin-left: 100px\9;
+}
+.main .navs div ul li a{
+	font-size:14px;
+	color: #606566;
+	line-height:21px;
+	padding: 9px;
+	text-decoration:none
+}
+.main .navs ul li{
+	height:39px;
+	overflow:hidden;
+	text-indent: 7px;
+}
+.main .navs ul li a:hover{
+	color: #ff5f3e;
+	border-left: 2px solid #ff5f3e;
+}
+/*导航*/
+.main .container .con ul li{
+	margin-bottom: 40px;
+	float: left;
+	width: 100%;
+	display: block;
+}
+.main .container .con ul li div{
+	padding: 20px 10px 20px 5px;
+	background: #f2f2f2;
+	overflow: hidden;
+}
+.main .container .con ul li div p{
+	color: #888;
+	line-height: 24px;
+	font-size: 14px;
+}
+.main .container .con ul li span {
+	display: inline-block;
+	margin: 13px 0 0 0;
+	height: 21px;
+	text-decoration:none;
+	overflow: hidden;
+	font-size: 14px;
+	color: #F50;
+	white-space: nowrap;
+	font-family: arial; 
+}
+/*内容盒子*/
+.footer .logo2{
+	border-top: 100px solid #fff;
+	border-bottom: none;
+	border-left: none;
+	border-right: 100px solid #F50;
+	margin-right: -100px;
+}
+.clear{
+	clear: both;
+	height: 0; 
+	line-height: 0;
+	font-size: 0；
+}
+/*清除浮动对底部的影响*/
