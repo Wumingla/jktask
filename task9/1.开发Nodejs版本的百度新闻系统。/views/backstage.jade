@@ -1,0 +1,108 @@
+doctype transitional
+html(xmlns='http://www.w3.org/1999/xhtml')
+  head
+    meta(http-equiv='Content-Type', content='text/html; charset=utf-8')
+    title &#x9489;&#x9489;
+    link(rel='stylesheet', type='text/css', href='/css/bootstrap.min.css')
+    link(rel='stylesheet', type='text/css', href='/css/backstage.css')
+  body
+    .container
+      table.table.table-bordered
+        thead
+          th.top(colspan='4', scope='col')
+            input.search(type='text', placeholder='内容搜索')
+        // 表格头部&搜索栏
+        tbody
+          tr
+            td.navs(width='101', rowspan='3')
+              ul#navAll
+                a(href='#')
+                  img.img-circle(src='/img/logo.png', alt='logo')
+                  p Admin
+                li#navRec.tabon(value='navRec') &#x63A8;&#x8350;
+                li#navFam(value='navfam') &#x767E;&#x5BB6;
+                li#navLocal(value='navLocal') &#x672C;&#x5730;
+                li#navImg(value='navImg') &#x56FE;&#x7247;
+                li#navAmuse(value='navAmuse') &#x5A31;&#x4E50;
+                li#navSociety(value='navSociety') &#x793E;&#x4F1A;
+                .ctrl
+                  a(href='#')
+                    img(src='/img/c1.jpg', alt='控健')
+                  br
+                  a(href='#')
+                    img(src='/img/c2.jpg', alt='控件')
+            // 导航栏
+            td.msn(height='50')
+              img.img-circle(src='/img/msner.jpg', alt='头像')
+              span &#x7BA1;&#x7406;&#x5185;&#x5BB9;
+              input.opennews.btn.btn-primary.btn-sm(type='button', onclick="window.open('baidunews');", value='浏览前台')
+            td.msner(width='170')
+              img.img-circle(src='/img/msner.jpg', alt='头像')
+              span &#x65B0;&#x5EFA;&#x5185;&#x5BB9;
+          // 信息内容
+          tr
+            td(rowspan='2')
+              .adminCon
+                table.admanage.table-bordered.table-condensed
+                  thead
+                    tr.bg-success
+                      td.col-md-1.text-center ID
+                      td.col-md-1.text-center &#x7C7B;&#x578B;
+                      td.col-md-2.text-center &#x6807;&#x9898;
+                      td.col-md-1.text-center &#x4F5C;&#x8005;
+                      td.col-md-2.text-center &#x914D;&#x56FE;
+                      td.col-md-2.text-center &#x5185;&#x5BB9;
+                      td.col-md-1.text-center &#x65F6;&#x95F4;
+                      td.col-md-2.text-center &#x64CD;&#x4F5C;
+                  // 导入数据库信息
+                  tbody#adminContent
+                // 修改内容界面
+                .resetfrom.mhide
+                  form(name='form2', method='post')
+                    input#resetsort.form-control.mhide(type='text', value='')
+                    .form-group
+                      label(for='resetid') &#x4FEE;&#x6539;&#x5185;&#x5BB9;&#x7684;&ldquo;ID&rdquo;&#x7F16;&#x53F7;&#x4E3A;:
+                      input#resetid.form-control(type='text', readonly='', value='')
+                    .form-group
+                      select#resettype.form-control.input-sm
+                        option(value='新闻') 新闻
+                        option(value='焦点图') 焦点图
+                        option(value='滚播') 滚播
+                    .form-group
+                      input#resettitle.form-control.input-sm(type='text', placeholder='标题')
+                    .form-group
+                      input#resetfrom.form-control.input-sm(type='text', placeholder='摘自')
+                    .form-group
+                      input#resetdate.form-control.input-sm(type='date', placeholder='时间')
+                    .form-group
+                      input#resetimg.form-control.input-sm(type='text', placeholder='图片地址')
+                    .form-group
+                      textarea#resetcontent.form-control.input-sm(placeholder='内容')
+                    .form-group
+                      input#resetsbm.form-control.input-sm.btn-primary(type='submit', value='确认修改')
+            // 新增内容
+            td(rowspan='2')
+              form#form1(name='form1', method='post')
+                input#newssort.newtype.form-control.input-sm(type='text', readonly='', name='newssort')
+                h7
+                  label(for='newtype') &#x7C7B;&#x578B;&#xFF1A;
+                //- input#newstype.newtype.form-control.input-sm(type='text', name='newstype')
+                select#newstype.newtype.form-control.input-sm(name='newstype')
+                  option(value='新闻') 新闻
+                  option(value='焦点图') 焦点图
+                  option(value='滚播') 滚播
+                h7
+                  label(for='newtitle') &#x6807;&#x9898;&#xFF1A;
+                input#newstitle.newtitle.form-control.input-sm(type='text', name='newstitle')
+                h7
+                  label(for='newfrom') &#x6458;&#x81EA;/&#x4F5C;&#x8005;&#xFF1A;
+                input#newsfrom.newfrom.form-control.input-sm(type='text', name='newsfrom')
+                h7
+                  label(for='newImg') &#x914D;&#x56FE;&#xFF1A;
+                input#newsimg.newImg.form-control.input-sm(type='text', name='newsimg')
+                h7
+                  label(for='newcontent') &#x5185;&#x5BB9;&#xFF1A;
+                textarea#newscontent.newcontent.form-control.input-sm(name='newscontent')
+                input#smbtn.btn.btn-primary.btn-sm.btn-block(type='submit', name='smbtn', value='新增')
+    script(type='text/javascript', src='/js/jquery-2.1.4.min.js')
+    script(type='text/javascript', src='/js/backstage.js')

@@ -1,0 +1,29 @@
+doctype transitional
+html(xmlns='http://www.w3.org/1999/xhtml')
+  head
+    meta(http-equiv='Content-Type', content='text/html; charset=utf-8')  
+    title &#x9489;&#x9489; 
+    link(rel='stylesheet', type='text/css', href='/css/bootstrap.min.css')  
+    link(rel='stylesheet', type='text/css', href='/css/login.css')
+  body
+    .container
+      .top.row
+        .header &#x626B;&#x7801;&#x767B;&#x5F55;        
+        .header &#x5BC6;&#x7801;&#x767B;&#x5F55;        
+        .header &#x9A8C;&#x8BC1;&#x7801;&#x767B;&#x5F55;
+      // 登录方式
+      .main
+        img.img-circle(src='/img/logo.png', alt='logo')
+        // LOGO
+        .con
+          .add
+            img(src='/img/add.png', alt='中国国旗')             
+            span +86
+          // 中国地区
+          form
+            input.phone(style='tel', placeholder='请输入手机')              
+            input.pswd.form-control(type='password', placeholder='请输入密码')              
+            a.pswd.form-control.loginbtn(href='backstage') 登录
+          // 输入表单及按钮
+          a.newuser(href='backstage') &#x65B0;&#x7528;&#x6237;&#x6CE8;&#x518C;
+          // 注册跳转

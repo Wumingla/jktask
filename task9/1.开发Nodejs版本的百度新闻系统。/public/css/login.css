@@ -1,0 +1,114 @@
+body{
+  background:#7BB3D4;
+}
+.container{
+  width: 372px;
+  height: 343px;
+  background:#ccc url(/img/bgp.png);
+  background-size: 1127px 343px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -186px;
+  margin-top: -171.5px;
+  overflow: hidden;
+}
+/*整体容器*/
+.header{
+  display: inline-block;
+  float: left;
+  width: 33.3%;
+  height: 44px;
+  line-height: 44px;
+  background: #E7F0F1;
+  font-size: 13px;
+  color:#7d7d7e;
+  text-align: center;
+  cursor:pointer;
+}
+.header:hover{
+  border-left:1px solid #e1e1e1;
+  border-right: 1px solid #e1e1e1;
+  font-size: 14px;
+  color: #222;
+  background: #c6e0ec;
+}
+/*登录方式*/
+.main{
+  width: 312px;
+  height: 232px;
+  margin:25px auto 0 auto;
+  text-align: center;
+}
+.main img{
+  height: 66px;
+  border:2px solid #FFF;
+  margin-bottom: 13px;
+}
+/*内容容器及背景*/
+.main .con .add{
+  width: 118px;
+  height: 40px;
+  padding: 10px;
+  border:1px solid #baced9;
+  background: transparent;
+  border-radius:3px;
+  display: inline-block;
+  position: relative;
+  float: left;
+  margin-right: 5px;
+}
+.add img{
+  height: 14px;
+  position: absolute;
+  top: 13px;
+  left: 20px;
+}
+/*地区*/
+.main .con form .phone{
+  width: 189px;
+  height: 40px;
+  padding: 10px;
+  border:1px solid #baced9;
+  background: transparent;
+  border-radius:3px;
+  display: inline-block;
+  position: relative;
+  float: left;
+}
+/*电话*/
+.main .con form .pswd{
+  height: 40px;
+  padding: 10px;
+  border:1px solid #baced9;
+  background: transparent;
+  border-radius:3px;
+  margin-top: 5px;
+  float: left;
+}
+/*密码*/
+.main .con form .login{
+  background: #C7C7CC;
+  float: left;
+  height: 38px;
+  margin-top: 21px;
+  color: #fff;
+  font-size: 15px;
+  font-weight: 600;
+}
+.loginbtn{
+  cursor: pointer;
+}
+.loginbtn:hover{
+  text-decoration: none;
+}
+/*登录*/
+.main .con .newuser{
+  text-decoration: none;
+  color: #38adff;
+  font-size: 13px;
+  position: absolute;
+  left: 20px;
+  bottom: 15px;
+}
+  /*注册*/
