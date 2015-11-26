@@ -1,0 +1,748 @@
+.mainer{
+  height: 2420px;
+}
+/*主体框架*/
+.mainer{
+  .lessonCon{
+    width: 1000px;
+    margin:20px auto 0 auto;
+    position: relative;
+  }
+  .hotnav{
+    margin-top:30px;
+    width: 100%;
+    position: relative;
+    float: left;
+  }
+  .actionway{
+    position: relative;
+    float: left;
+    width: 100%;
+    margin-top: 30px;
+  }
+  .systemway{
+    position: relative;
+    float: left;
+    width: 100%;
+    margin-top: 30px;
+  }
+  .partner{
+    @extend .hotnav;
+  }
+  .school{
+    @extend .hotnav;
+  }
+}
+/*焦点区*/
+.lessonCon{
+  .lesson_nav{
+    width: 208px;
+    height: 296px;
+    position: relative;
+    float: left;
+  }
+  .lesson_banner{
+    width: 569px;
+    height: 305px;
+    border:1px solid $bordergrey;
+    border-right: 0;
+    float: left;
+    margin-left: 10px;
+    overflow: hidden; 
+    position: relative;
+  }
+  .lesson_show{
+    width: 208px;
+    height: 305px;
+    border:1px solid $bordergrey;
+    position: relative;
+    float: left;
+  }
+}
+/*课程导航*/
+.lesson_nav{
+  ul{
+    border-top: 2px solid $primaryColor;
+    border-bottom:1px solid $bordergrey;
+    position: relative;
+    z-index: 2;
+  }
+}
+
+.lesson_nav ul{
+  li{
+    list-style:none;
+    display: inline-block;
+    width: 191px;
+    height: 38px;
+    line-height: 38px;
+    padding-left: 15px;
+    font-size: 13px;
+    background: #fff;
+    border-left: 1px solid $bordergrey;
+    border-right: 1px solid $bordergrey;
+    color: #333;
+    cursor: pointer;
+  }
+  .lihover{
+    border-top: 1px solid $bordergrey;
+    border-bottom: 1px solid $bordergrey;
+    border-left: 2px solid $primaryColor;
+    height: 35px;
+    border-right: none;
+    color: $primaryColor;
+  }
+  .lessonNavLast{
+    display: none;
+  }
+}
+
+.lesson_nav ul:hover .lessonNavLast{
+  display: block;
+}
+.lesson_nav ul li div{
+  display: none;
+}
+
+.lesson_nav ul .lihover div{
+  display: block;
+  width: 400px;
+  height: 417px;
+  position: absolute;
+  top: -2px;
+  left: 208px;
+  border-top: 2px solid $bordergrey;
+  border-right: 1px solid $bordergrey;
+  border-bottom: 1px solid $bordergrey;
+  padding-left: 15px;
+  background: #fff;
+}
+
+.lesson_nav ul .lihover div dl{
+  dt{
+    height: 37px;
+    font-size: 13px;
+    line-height: 45px;
+    cursor: pointer;
+    border-bottom: 1px solid #f5f5f5;
+    color: #666;
+  }
+  dd{
+    list-style: none;
+    padding:3px 0;
+    line-height: 14px;
+  }
+}
+
+.lesson_nav ul .lihover div dl dd{
+  a{
+    display: inline-block;
+    height: 14px;
+    line-height: 14px;
+    font-size: 12px;
+    cursor: pointer;
+    color: #999;
+    text-decoration: none;
+    margin:4px 0 4px 0;
+  }
+  span{
+    padding: 0 2px;
+  }
+}
+
+.lesson_nav ul .lihover div dl dt:hover,
+.lesson_nav ul .lihover div dl dd a:hover{
+  color:#38b558;
+}
+.mhidden{
+  display: none;
+}
+.mblock{
+  display: block;
+}
+/*轮播图*/
+.lesson_banner{
+  .LB_container{
+    width: 3983px;
+    height: 305px;
+    background: #ccc;
+    position: absolute;
+    z-index: -1;
+  }
+  .LB_buttons{
+    position: absolute; 
+    height: 10px; 
+    width: 290px; 
+    bottom: 20px; 
+    left: 155px;
+  }
+  .LB_arrow{
+    cursor: pointer; 
+    display: none; 
+    line-height: 39px; 
+    text-align: center; 
+    font-size: 36px; 
+    font-weight: bold; 
+    width: 40px; 
+    height: 40px;  
+    position: absolute; 
+    z-index: 2; 
+    top: 50%; 
+    margin-top: -20px;
+    background-color: RGBA(0,0,0,.3); 
+    color: #fff;
+  }
+  .LB_arrow:hover{
+    background-color: RGBA(0,0,0,.7);
+  }
+  #prev{ 
+    left: 20px;
+  }
+  #next { 
+    right: 20px;
+  }
+}
+
+.lesson_banner:hover .LB_arrow { 
+  display: block;
+}
+
+.LB_container{
+  img{
+    float: left;
+  }
+}
+
+.LB_buttons{
+  span{
+    cursor: pointer; 
+    float: left; 
+    width: 35px; 
+    height: 5px; 
+    background: #fff; 
+    margin-right: 20px;
+  }
+  .on{
+    background: $primaryColor;
+  }
+}
+/*了解更多*/
+.lesson_show{
+  .showbox1{
+    width: 168px;
+    height: 112px;
+    padding: 20px;
+    border-bottom: 1px solid $bordergrey;
+  }
+  .showbox2{
+    width: 168px;
+    height: 111px;
+    padding: 20px;
+  }
+}
+
+.showbox1{
+  h2{
+    font-size: 16px;
+    color: #666;
+    font-weight: 400;
+  }
+  p{
+    font-size: 12px;
+    color: $primaryColor;
+    margin:15px auto;
+  }
+  button{
+    width: 168px;
+    height: 34px;
+    font-size: 14px;
+    font-weight: 500;
+    border:none;
+    color: #fff;
+    background: #7bda95;
+    line-height: 34px;
+    cursor: pointer;
+    outline:0;
+    @include transition(background 1s);
+  }
+  button:hover{
+    background: $primaryColor;
+  }
+}
+.showbox2{
+  h2{
+    font-size: 16px;
+    color: #666;
+    font-weight: 400;
+  }
+  p{
+    font-size: 12px;
+    color: $primaryColor;
+    margin:15px auto;
+  }
+  button{
+    width: 168px;
+    height: 34px;
+    font-size: 14px;
+    font-weight: 500;
+    border:1px solid $primaryColor;
+    color: $primaryColor;
+    background: #FFF;
+    line-height: 34px;
+    cursor: pointer;
+    outline:0;
+    @include transition(background 1s);
+    @include transition(color 1s);
+  }
+  button:hover{
+    background: $primaryColor;
+    color: #fff;
+  }
+}
+/*热门导航*/
+.hotnav{
+  ul{
+     width: 1000px;
+     margin:0 auto;
+  }
+}
+.hotnav ul{
+  li{
+    height: 19px;
+    padding: 10px 0;
+    font-size: 14px;
+    list-style: none;
+    width: 16.6%;
+    float: left;
+    text-align: center;
+    color: #666;
+    cursor: pointer;
+    border-bottom: 2px solid #fff;
+  }
+  .allnavOn{
+    border-bottom: 2px solid $primaryColor;
+    color:$primaryColor;
+    background: url(../images/liicon.png) center bottom no-repeat;
+    background-size: 10px 4px;
+  }
+}
+
+.hotMain{
+  .alllesson{
+    margin-top: 30px;
+    position: relative;
+    width: 100%;
+    float: left;
+  }
+}
+/*热门课程*/
+.alllesson{
+  ul{
+     width: 1100px;
+     height: 480px;
+     margin:0 auto;
+     position: relative;
+     left: 50px;
+  }
+}
+.alllesson ul{
+  li{
+    display: inline-block;
+    width: 233px;
+    height: 218px;
+    list-style: none;
+    margin: 0 20px 20px 0;
+    border:1px solid $bordergrey;
+    position: relative;
+    float: left;
+    cursor: pointer;
+  }
+}
+.alllesson ul li{
+  .lessonImg{
+    width: 233px;
+    height: 129px;
+  }
+  .lessonbox{
+    width: 213px;
+    height:69px;
+    padding: 10px;
+  }
+}
+
+.lessonbox{
+  h2{
+    height: 36px;
+    margin-bottom: 12px;
+    font-size: 14px;
+    line-height: 16px;
+    color: #333;
+    overflow: hidden;
+  }
+  span{
+    height: 14px;
+    font-size: 12px;
+      margin-left: 5px;
+      color: gray;
+      position: relative;
+      top: -2px;
+  }
+  .timeicon{
+    width: 14px;
+    height: 14px;
+  }
+  .styleicon{
+    width: 14px;
+    float: right;
+    position: relative; 
+    top: -15px\9
+  }
+}
+/*实战路径*/
+.actionway{
+  .actionbox{
+    width: 1002px;
+    height: 380px;
+    position: relative;
+    margin: 0 auto;
+  }
+}
+.actiontext{
+  margin-bottom: 16px;      
+}
+.actiontext{
+  span{
+    height: 24px;
+    font-weight: 500;
+    font-size: 18px;
+    color: #333;
+  }  
+  .more{
+    position: relative;
+    float: right;
+    color: #2d85ca;
+    margin-top: 4px; 
+  }  
+}
+
+.actionstyle ul{
+    width: 1002px;
+    height: 340px;
+    position: relative;
+    float: left;
+}
+.actionstyle ul{
+  li{
+    display: inline-block;
+    width: 198px;
+    height: 278px;
+    border-top: 1px solid $bordergrey;
+    border-left: 1px solid $bordergrey;
+    border-bottom: 1px solid $bordergrey;
+    border-right: 1px solid #fff;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    position: relative; 
+    float: left;
+    text-align: center;
+  }
+  li:hover{
+    border:1px solid $primaryColor;
+  }
+  .stylelast{
+    border-right: 1px solid $bordergrey;
+  }
+}
+.actionstyle ul li{
+  img{
+    width: 70px;
+    height: 70px;
+    margin-bottom: 24px;
+  }
+  h2{
+    height: 20px;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 20px;
+    margin-bottom: 30px;
+    color: #333;
+  }
+  p{
+    height: 20px;
+    line-height: 20px;
+    font-size: 12px;
+    color: #333;
+  }
+  button{
+    margin-top: 40px;
+    color: $primaryColor;
+    background:#fff; 
+    width: 140px;
+    height: 34px;
+    line-height: 34px;
+    font-size: 14px;
+    font-weight: 400;
+    cursor:pointer;
+    border:1px solid $primaryColor;
+    @include transition(background 1s);
+    @include transition(color 1s);
+  }
+  button:hover{
+    background: $primaryColor;
+    color: #fff;
+  }
+}
+/*知识体系图*/
+.systemway{
+  .systembox{
+    width: 1003px;
+    height: 521px;
+    margin:0 auto;
+  }
+}
+.systembox{
+  .systemstyle{
+    position: relative;
+    float: left;
+    width: 1003px;
+    height: 481px;
+    margin: 0 auto;
+  }
+}
+.systemstyle{
+  ul{
+      width: 1003px;
+      height: 481px;
+      position: relative;
+      float: left;
+  }
+}
+
+.systemstyle ul{
+  li{
+    display: inline-block;
+    width: 166px;
+    height: 89px;
+    border-top: 1px solid $bordergrey;
+    border-left: 1px solid $bordergrey;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    position: relative;
+    float: left;
+    text-align: center;
+    cursor: pointer;
+    @include transform-style(preserve-3d);
+  }
+  .systemright{
+    border-right: 1px solid $bordergrey;
+  }
+  .systemlast{
+    border-bottom: 1px solid $bordergrey;
+  }
+  li:hover .stycon{
+    transform:rotateY(177deg);
+    -webkit-transform:rotateY(177deg);
+    -moz-transform:rotateY(177deg);
+    -ms-transform:rotateY(177deg);
+    -o-transform:rotateY(177deg);
+  }
+}
+
+.systemstyle ul li{
+  .stycon{
+    display: inline-block;
+    width: 166px;
+    height: 89px;
+    @include transform-style(preserve-3d);
+    @include transition(all .5s)
+  }
+}
+
+.stycon{
+  .infront{
+    display: inline-block;
+    width: 166px;
+    height: 89px;
+    background: #fff;
+    float: left;
+  }
+  .after{
+    display: inline-block;
+    width: 166px;
+    height: 89px;
+    background: #fff;
+    transform:rotateY(180deg)translateZ(1px);
+    -webkit-transform:rotateY(180deg)translateZ(1px);
+    -moz-transform:rotateY(180deg)translateZ(1px);
+    -ms-transform:rotateY(180deg)translateZ(1px);
+    -o-transform:rotateY(180deg)translateZ(1px);
+    margin-top: -89px;
+    float: left;
+  }
+}
+.infront{
+  img {
+    width: 40px;
+    height: 40px;
+    margin-bottom: 5px;
+  }
+  h2 {
+    height: 18px;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 18px;
+    margin-bottom: 5px;
+    color:#333;
+  }
+  p {
+    height: 17px;
+    line-height: 17px;
+    font-size: 14px;
+    color: $primaryColor;
+  }
+}
+.after{
+  strong{
+    text-align: center;
+    font-size: 14px;
+    color: #666;
+    font-weight: 400;
+    line-height: 50px;
+  }
+  button{
+    display: inline-block;
+    width: 140px;
+    height: 36px;
+    background: $primaryColor;
+    color: #fff;
+    font-size: 16px;
+    text-align: center;
+    cursor: pointer;
+    border:none;
+  }
+}
+/*合作伙伴*/
+.partner{
+  .partnerbox{
+    position: relative;
+    width: 1000px;
+    height: 130px;
+    margin:0 auto;
+  }
+}
+.partnerbox{
+  .partners{
+    position: relative;
+    width: 984px;
+    height: 50px;
+    margin: 0 auto;
+    border:1px solid $bordergrey;
+    padding: 20px 7px;
+    overflow: hidden;
+  }
+}
+.partners{
+  #partnersCon{
+    width: 1968px;
+    height: 50px;
+    position: relative;
+    left: -164px;
+  }
+}
+.part_arrow{
+  cursor: pointer; 
+  display: none; 
+  line-height: 39px; 
+  text-align: center; 
+  font-size: 36px; 
+  font-weight: bold; 
+  width: 40px; 
+  height: 40px;  
+  position: absolute; 
+  z-index: 2; 
+  top: 50%; 
+  margin-top: -20px;
+  background-color: RGBA(0,0,0,.3); 
+  color: #fff;
+}
+.part_arrow:hover{
+  background-color: RGBA(0,0,0,.7);
+}
+.partners:hover .part_arrow,
+.schools:hover .part_arrow { 
+  display: block;
+}
+#partprev{
+  left: 0;
+}
+#partnext{
+  right: 0;
+}
+#medCon{
+  width: 1968px;
+  height: 50px;
+  position: relative;
+  left: -164px;
+}
+#medprev{
+  left: 0;
+}
+#mednext{
+  right: 0;
+}
+.partners img{
+  display: inline-block;
+  position: relative;
+  float: left;
+  width: 148px;
+  height: 48px;
+  border:1px solid $bordergrey;
+  margin:0 7px;
+  cursor: pointer;
+}
+/*合作院校*/
+.school{
+  .schoolbox{
+    position: relative;
+    width: 1000px;
+    height: 190px;
+    margin:0 auto;
+  }
+}
+.schoolbox{
+  .schools{
+    position: relative;
+    margin:0 auto;
+    width: 994px;
+    height: 108px;
+    padding: 20px 0;
+    border:1px solid $bordergrey;
+    overflow: hidden;
+  }
+}
+.schools{
+  #schoolCon{
+    display: inline-block;
+    width: 1988px;
+    height: 108px;
+    position: relative;
+    left: -142px;
+  }
+  #schoolprev{
+    left: 0;
+  }
+  #schoolnext{
+    right: 0;
+  }
+}
+#schoolCon{
+  img{
+    display: inline-block;
+    position: relative;
+    width: 110px;
+    height: 108px;
+    margin: 0 16px;
+    float: left;
+    cursor: pointer;
+  }
+}

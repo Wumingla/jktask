@@ -1,0 +1,41 @@
+$fontStack: Verdana, Helvetica, sans-serif;
+$primaryColor: #35b558;
+$bordergrey:#e4e4e4;
+$fontgrey:#666;
+$bodyfontsize:12px;
+
+@mixin transition ($transition) {
+    -webkit-transition:$transition;     
+       -moz-transition:$transition;
+        -ms-transition:$transition;
+         -o-transition:$transition;
+            transition:$transition;
+}
+
+@mixin transform-style ($style) {
+    -webkit-transform-style:$style;     
+       -moz-transform-style:$style;
+        -ms-transform-style:$style;
+         -o-transform-style:$style;
+            transform-style:$style;
+}
+
+/*全局*/
+*{
+  margin: 0;
+  padding: 0;
+}
+body{
+  font-size: $bodyfontsize;
+  font-family: $fontStack;
+} 
+a{
+  text-decoration:none;
+}
+
+/*头部*/
+@import 'header';
+/*主体*/
+@import 'main';
+/*底部*/
+@import 'footer';

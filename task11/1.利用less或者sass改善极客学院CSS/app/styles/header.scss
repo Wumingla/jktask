@@ -1,0 +1,161 @@
+.header{
+  .headTop{
+    width: 1000px;
+    height: 50px;
+    padding: 10px;
+    margin: 0 auto;
+  }
+  .headNav{
+    height: 41px;
+    border-bottom:1px solid #e8e8e8;
+    border-top: 2px solid $primaryColor;
+    box-shadow: rgba(0,0,0,.1) 0 1px 5px;
+  }
+}
+
+.headTop{
+  .headTopCon{
+    width: 1000px;
+    height: 50px;
+    position: relative;
+  }
+}
+/*头部框架*/
+.headTopCon{
+  .headlogo{
+    float: left;
+  }
+  .headTopConSearch{
+    width: 380px;
+    height: 38px;
+    border:1px solid $bordergrey;
+    position:absolute;
+    left: 50%;
+    margin-left: -190px;
+  }
+  .headLogin{
+    display: inline-block;
+    line-height: 50px;
+    text-align: right;
+    float: right;
+  }
+}
+/*LOGO*/
+.headlogo{
+  img{
+      width: 114px;
+      height: 41px;
+      margin-top: 5px;
+      border-style:none;
+  }
+}
+/*搜索栏*/
+.headTopConSearch{
+  .headSearch{
+    width: 308px;
+    height:18px;
+    padding: 9px 55px 9px 15px;
+    text-align: left;
+    margin-left: 190px\9
+  }
+  .searchWord{
+    width: 160px;
+    height: 17px;
+    display: inline-block;
+    position: absolute;
+    top: 13px;
+    right: 48px;
+  }
+  .searchbtn{
+    display: inline-block;
+    width: 40px;
+    height: 38px;
+    border-left:1px solid #dfdfdf;
+    position: absolute;
+    right: -1px;
+    top: 1px;
+    background: transparent url(../images/search.png) no-repeat  center; 
+  }
+  .searchbtn:hover{
+    background: $primaryColor url(../images/search.png) no-repeat  center;
+  }
+}
+/*热词*/
+.searchWord{
+  a{
+    color: gray;
+    margin-left: 10px; 
+  }
+  a:hover{
+    background:#E2DEDE;
+    color:#333;    
+  }
+}
+/*登录*/
+.headLogin{
+  span a{
+    color: #333;
+  }
+  span a:hover{
+    color:$primaryColor;
+  }
+}
+/*头部导航*/
+.headNav{
+  .headNavCon{
+    width: 1000px;
+    margin:0 auto;
+    position: relative;
+  }
+}
+
+.headNavCon{
+  .nav1{
+    width: 740px;
+    height: 44px;
+    margin-left: -22px;
+  }
+  .nav2{
+    width: 256px;
+    height: 44px;
+    line-height: 44px;
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+}
+.headNavCon .nav1{
+  a{
+    display: inline-block;
+    line-height: 41px;
+    font-size: 14px;
+    margin-right: 20px;
+    padding:0 22px;
+    margin-left:-3px\9;
+    color: #333;
+  }
+  a:hover{
+    color: $primaryColor;
+  }
+}
+
+.headNavCon .nav2{
+  a{
+    display: inline-block;
+    line-height: 41px;
+    margin-left: 20px;
+    margin-left:17px\9;
+    _margin-top:10px;
+    color: #333;
+  }
+  a:hover{
+    color: #38b558;
+  }
+  img{
+    margin-right: 5px;
+    border-style:none;
+    position: relative;
+    top: 3px;
+  }
+
+}

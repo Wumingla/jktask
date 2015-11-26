@@ -1,0 +1,127 @@
+.footer{
+	min-width: 1000px;
+	margin-top: 80px;
+	position: relative;	
+}
+/*底部框架*/
+.footer{
+	.footer_box{
+		border-top:1px solid $bordergrey;
+		border-bottom:1px solid $bordergrey;
+		background: #fafafa;
+		position: relative;
+	}
+	.foottext{
+		text-align: center;
+		padding: 20px;
+		color: $fontgrey;
+	}
+}
+
+.footer_com{
+	width: 1000px;
+	min-height: 226px;
+	margin:0 auto;
+	position: relative;
+}
+
+.footer_com{
+	dl{
+		width: 154px;
+		padding-left: 30px;
+		margin:25px 0;
+		float: left;
+		min-height: 175px;
+		border-left: 1px solid $bordergrey;
+	}
+	.footer_logo{	
+		display: inline-block;
+		width: 219px;
+		min-height: 206px;
+		padding: 20px 0 0 40px;
+		border-left: 1px solid $bordergrey;
+		float: left;
+	}
+}
+
+.footer_com dl a:hover{
+	color: $primaryColor;
+}
+
+.footer_com dl dd {
+	margin-top: 10px;
+}
+
+.footer_com dl dd a{
+	color: $fontgrey;
+	font-weight: 500;
+	padding-left: 5px;
+}
+.footer_com dl dt a{
+	font-size: 14px;
+	color: gray;
+}
+
+.footer_logo{
+	strong{
+		font-size: 15px;
+		display: block;
+		font-weight: 500;
+		margin-bottom: 15px;
+		color: $primaryColor;
+	}
+	.share{
+		margin: 15px 0 15px 0;
+	}
+}
+
+.app-download{
+	img{
+		width: 21px;
+		display: inline-block;
+		float: left;
+		margin-right: 15px;
+		border-style:none;
+	}
+	strong{
+		font-size: 18px;
+		color: $fontgrey;
+		margin-bottom: 8px;
+	}
+	p{
+		font-size: 14px;
+		color: $fontgrey;
+	}
+}
+
+.share img{
+	width: 32px;
+	float: left;
+	display: inline-block;
+	margin-right: 15px;
+	border-style:none;
+}
+
+.kefu-online{
+	img{
+		float: left;
+		margin-right: 15px;
+		border-style:none;
+	}
+	h5{
+		font-size: 14px;
+		margin-bottom: 2px;
+		color: $fontgrey;
+	}
+	p{
+		color: $fontgrey;
+	}
+}
+
+.foottext strong a{
+	color: $fontgrey;
+}
+
+.clear{
+	clear: both;
+}
