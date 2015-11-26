@@ -1,0 +1,266 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-family: arial;
+}
+.header{
+	width: 100%;
+	height: 86px;
+	background: #3e98f0;
+}
+.headTop{
+	width: 100%;
+	height: 44px;
+	background:url(../img/bdlogo.png) ;
+	background-size: 77px auto;
+	background-repeat: no-repeat;
+	background-position: center 6px;
+}
+.headTop .slogo{
+	display: inline-block;
+	width: 34px;
+	height: 100%;
+	background: url(../img/htsbt.png);
+	background-position: center 4px;
+	background-size: 40px 500px;
+	float: left;
+}
+.headTop .user{
+	display: inline-block;
+	width: 34px;
+	height: 100%;
+	background: url(../img/htsbt.png);
+	background-position: center -463px;
+	margin-left: 10px;
+	background-size: 40px 500px;
+	float: left;
+}
+.headTop .more{
+	display: inline-block;
+	width: 34px;
+	height: 100%;
+	background: url(../img/htsbt.png);
+	background-position: center -107px;
+	background-size: 40px 500px;
+	float: right;
+}
+.headTop .search{
+	display: inline-block;
+	width: 34px;
+	height: 100%;
+	background: url(../img/htsbt.png);
+	background-position: center -162px;
+	margin-right: 10px;
+	background-size: 40px 500px;
+	float: right;
+}
+.header .divider{
+	margin:0 10px;
+	height: 1px;
+	background:#5dabf0;
+}
+/*头部icon*/
+.headNavs ul li{
+	display: inline-block;
+	height: 33px;
+	width: 16.6%;
+	float: left;
+	color:#fff;
+	margin-top: 3px;
+	line-height: 33px;
+	text-align: center;
+	font-size: 16px;
+	font-weight: 400;
+	position: relative;
+}
+.headNavs ul li b{
+	display: inline-block;
+	width: 1px;
+	height: 12px;
+	position: absolute;
+	left: 0;
+	top: 10px;
+	background-color: #5dabf0;
+}
+/*头部导航*/
+.mainer{
+	background:#fff;
+	padding: 10px;
+}
+.mainer .mainBan{
+	display: inline-block;
+	width: 100%;
+	height: 212px;
+	overflow: hidden;
+	position: relative;
+}
+.mainBan .banCon{
+	display: inline-block;
+	height: 212px;
+	width: 100%;
+	background: green;
+}
+.banCon img{
+	display: inline-block;
+	width: 100%;
+	height: 212px;
+	float: left;
+	cursor: pointer;
+}
+.navimgPhoto img{
+	margin-top: 5px;
+	width: 100%;
+	height: 212px;
+}
+.navimgTitle{
+	color: #545454;
+	height: 28px;
+	line-height: 28px;
+	border-bottom: 1px solid #ccc;	
+}
+.mainBan .banTab{
+	display: inline-block;
+	width: 100%;
+	height: 3px;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+}
+.banTab span{
+	display: inline-block;
+	width: 33.3%;
+	height: 3px;
+	float: left;
+	background: #B8BBC0;
+}
+.banTab .banTabOn{
+	background: #3E98F0;
+}
+/*焦点图*/
+.mainHot{
+	height: 28px;
+	margin-top: 10px;
+	position: relative;
+}
+.mainHot .hotLeft{
+	display: inline-block;
+	width: 36px;
+	height: 28px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: #e02f2f;
+	text-align: center;
+	line-height: 28px;
+	font-size: 14px;
+	color: #fff;
+	cursor: pointer;
+}
+.mainHot #hotRight{
+	display: inline-block;
+	height: 28px;
+	float: left;
+	width: 100%;
+	overflow: hidden;
+}
+.mainHot #hotRight ul li{
+	height: 28px;
+	line-height: 28px;
+	font-size: 15px;
+	list-style:none;
+	color: #545454;
+	position: relative;
+	left: 42px;
+	cursor: pointer;
+	overflow: hidden;
+}
+/*热点滚动信息*/
+.mainCon ul li{
+	height: 68px;
+	background: #fff;
+	margin-top: 10px;
+	list-style: none;
+	position: relative;
+	overflow: hidden;
+}
+.mainCon ul li img{
+	display: inline-block;
+	height: 68px;
+	width: 95px;
+	float: left;
+	margin-right: 10px;
+}
+.mainCon .newstitle{
+	font-size: 16px;
+	line-height: 20px;
+	color: #262b31;
+	margin-top: -1px;
+}
+.mainCon .newsContent{
+	font-size: 13px;
+	line-height: 17px;
+	color: #b8bac0;
+}
+.mainCon .newsdate{
+	position: absolute;
+	bottom: 0;
+	font-size: 12px;
+	color:#b8bac0;
+	
+}
+.mainCon .newsfrom{
+	display: inline-block;
+	padding: 2px 3px;
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	background: #e02f2f;
+	font-size: 12px;
+	line-height: 14px;
+	color: #fff;
+	border-radius: 2px;
+}
+/*新闻内容*/
+.footer{
+	height: 44px;
+	background: #3E98F0;
+}
+.footer span{
+	display: inline-block;
+	width: 33.3%;
+	height: 44px;
+	line-height: 44px;
+	text-align: center;
+	color: #fff;
+	font-size: 13px;
+	float: left;
+	position: relative;
+	cursor: pointer;
+}
+.footer span b{
+	display: inline-block;
+	width: 1px;
+	height: 12px;
+	position: absolute;
+	left: 0;
+	top: 16px;
+	background-color: #5dabf0;
+}
+.footer span i{
+	display: inline-block;
+	width: 25px;
+	height: 22px;
+	background-image: url(../img/fsbt.png);
+	background-size: 30px 300px;
+	position: relative;
+	top: 7px;
+}
+.footer .footReturn i{
+	background-position: 0 3px;
+}
+.footer .footPut i{
+	background-position: 0 -31px;
+}
+.footer .footDown i{
+	background-position: 0 -64px;
+}
