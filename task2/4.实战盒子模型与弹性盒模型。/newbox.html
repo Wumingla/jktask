@@ -1,0 +1,242 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>BOX-MODEL</title>
+</head>
+<style type="text/css">
+    body{
+        margin: 0;
+        padding: 0;
+        font-size:12px;
+        font-family:arial;
+        color: #f96e57;   
+        text-align:center;
+        line-height: 36px;
+    }
+    .header{
+        margin: 10px;
+    }
+    .header img{
+        width:150px
+    }
+    .header p{
+        text-align:center;
+        color:#ccc;
+    }
+    .main_flex{
+        display:-webkit-box;
+        display:-webkit-flex;
+        display:-ms-flexbox;
+        display:flex;
+    }
+    .main_flex div{
+        height: 100px;
+        background: #c3cad9;
+        -webkit-box-flex:1;
+        -webkit-flex:1;
+            -ms-flex:1;
+                flex:1;
+        margin: 5px;
+    }
+    .box_weird{
+        width: 1110px;
+        margin: 0 auto;   
+    }
+    .box_weird p{
+        text-align:center;
+        color:#ccc;
+    }
+    .box2{
+        box-sizing:border-box;
+        display: inline-block;
+        height: 360px;
+        width: 270px;
+        background: #c3cad9;
+        padding: 10px;
+        border:5px solid #FFFFFF ;
+    }
+    .box2_content{
+        height: 330px;
+        width: 240px;
+        background: #d9d8d8;
+        overflow-x: scroll;
+    }
+    .box3{
+        display: inline-block;
+        background: #c3cad9;
+        padding: 10px;
+        border:5px solid #FFFFFF;
+    }
+    .box3_content{
+        width: 240px;
+        background: #d9d8d8;
+    }
+    .box_normal{
+        width: 1110px;
+        margin: 0 auto;
+    }
+    .box_normal p{
+        text-align:center;
+        color:#ccc;
+    }
+    .footer{
+        width: 240px;
+        margin: 0 auto;
+        background: #FFFFFF;
+        text-align:center;
+        margin-top: 100px;
+    }
+    .box4{
+        width: 240px;
+        display: inline-block;
+        padding: 10px;
+        border:5px solid #f4a4a5;
+        color: #f4a4a5;
+        margin-top: 100px;
+        margin-bottom: 100px;
+    }
+</style>
+<body>
+    <div class="header">
+        <img src="img/P0.gif">
+        <p>
+            Box-Flex:我是海贼王路飞，看伸缩自如橡皮枪。
+        </p>
+    </div>
+
+    <div class="main">  
+        <div class="main_flex">    
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>    
+            <div></div>
+            <div></div>    
+        </div>   
+        <div class="box_weird">
+            <p>
+                Box-Sizing:我是一个怪异的瘦子，吃多少都不会变。
+            </p>
+            <div class="box2">
+                <div class="box2_content">
+                    <img src="img/P1.png" style="width:240px;">
+                    <span>
+                        从前有一只怪兽,<br/>
+                        它被封印在一个海边的瓶子里,<br/>
+                        在瓶子里寂寞的呆了好久。
+                    </span>
+                </div>
+            </div>
+
+            <div class="box2">
+                <div class="box2_content">
+                    <img src="img/P2.png" style="width:240px;">
+                    <span>
+                        呆了五百年的时候,<br/>
+                        他默默许愿说,<br/>
+                        “如果谁把我放出来，我就送给他一座银山。”
+                    </span>
+                </div>
+            </div>
+
+            <div class="box2">
+                <div class="box2_content">
+                    <img src="img/P3.png" style="width:240px;">
+                    <span>海浪依旧<br/>，<br/>没有人出现<br/>。</span>
+                </div>
+            </div>
+
+            <div class="box2">
+                <div class="box2_content">
+                    <img src="img/P4.png" style="width:240px;">
+                    <span>
+                        呆了一千年的时候，<br/>
+                        他默默许愿说,<br/>
+                        “如果谁把我放出来，我就送给他一座金山。”
+                    </span>
+                </div>
+            </div>    
+        </div> 
+
+        <div class="box_normal">
+            <p>Box-Normal:我是一个标准的胖子，喝水都长肉。</p>
+                <div class="box3">
+                    <div class="box3_content">
+                        <img src="img/P5.png" style="width:240px;">
+                        <span>
+                            海浪依旧<br/>
+                            ，<br/>
+                            没有人出现<br/>。
+                        </span>
+                    </div>
+                </div>
+                <div class="box3">
+                    <div class="box3_content">
+                        <img src="img/P6.png" style="width:240px;">
+                        <span>
+                            呆了一千五百年的时候，<br/>
+                            他默默许愿说,<br/>
+                            “如果谁把我放出来，我就送给他一座金山和一座银山。”
+                        </span>
+                    </div>
+                </div>
+                <div class="box3">
+                    <div class="box3_content">
+                        <img src="img/P7.png" style="width:240px;">
+                        <span>
+                            海浪依旧<br/>
+                            ，<br/>
+                            没有人出现<br/>
+                            。”
+                        </span>
+                    </div>
+                </div>
+                <div class="box3">
+                    <div class="box3_content">
+                        <img src="img/P8.png" style="width:240px;">
+                        <span>
+                            呆了两千年之后，<br/>
+                            终于海边来了一个孩子,<br/>
+                            捡起瓶子在玩耍中打开瓶塞，<br/>
+                            把怪物放了出来。
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="box3">
+            <div class="box3_content">
+                <img src="img/P9.png" style="width:240px;">
+                <span>
+                    怪物出来后毫不犹豫地把他吃掉了,<br/>
+                    因为寂寞了两千年的怪兽,<br/>
+                    已然恼羞成怒,<br/>
+                    心中决定,<br/>
+                    如果谁把他放出来,<br/>
+                    就会被他吃掉
+                </span>
+            </div>
+        </div>
+
+        <div class="box4">
+            <div class="box4_content">
+                <span >
+                    <p>如果我已经到了28岁</p>
+                    <p>依然还是感到孤独</p>
+                    <p>只求不像怪兽一样</p>
+                    <p>能够保护好自己内心的少年</p>
+                    <p>不被那只怪物吞噬掉自己</p>
+                </span>
+            </div> 
+        </div>   
+        <div>
+            <img src="img/P10.gif" style="width:100px" >
+        </div>
+    </div>
+</body>
+</html>
