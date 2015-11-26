@@ -1,0 +1,88 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>calculator</title>
+</head>
+	<link rel="stylesheet" type="text/css" href="calculator.css">
+	<script type="text/javascript" src="calculator.js"></script>
+<body>
+	<div class="wrapper">
+	<!-- 容器 -->
+		<form>
+			<table width="300px" border="0" cellspacing="0" cellpadding="1">
+			<!-- 列表布局 -->
+				<tr>
+					<th height="90px">
+						<div>
+							<input type="reset" name="reset" value="C">
+							<!-- 重设按钮 -->
+						</div>
+					</th>
+					<th height="90px" colspan="3" scope="col">
+						<input type="text" id="screen" name="screen" value="">
+						<!-- 输入框式显示屏 -->
+					</th>
+				</tr>
+				<tr>
+					<td height="90px">
+						<input type="button" value="1" onclick="getNum(1)">
+					</td>
+					<td>
+						<input type="button" value="2" onclick="getNum(2)">
+					</td>
+					<td>
+						<input type="button" value="3" onclick="getNum(3)">
+					</td>
+					<td>
+						<input type="button" value="+" onclick="getNum('+')">
+					</td>
+				</tr>
+				<tr>
+					<td height="90px">
+						<input type="button" value="4" onclick="getNum(4)">
+					</td>
+					<td>
+						<input type="button" value="5" onclick="getNum(5)">
+					</td>
+					<td>
+						<input type="button" value="6" onclick="getNum(6)">
+					</td>
+					<td>
+						<input type="button" value="-" onclick="getNum('-')">
+					</td>
+				</tr>
+				<tr>
+					<td height="90px">
+						<input type="button" value="7" onclick="getNum(7)">
+					</td>
+					<td>
+						<input type="button" value="8" onclick="getNum(8)">
+					</td>
+					<td>
+						<input type="button" value="9" onclick="getNum(9)">
+					</td>
+					<td>
+						<input type="button" value="*" onclick="getNum('*')">
+					</td>
+				</tr>
+				<tr>
+					<td height="90px">
+						<input type="button" value="." onclick="getNum('.')">
+					</td>
+					<td>
+						<input type="button" value="0" onclick="getNum(0)">
+					</td>
+					<td>
+						<input type="button" value="=" onclick="getresult()">
+					</td>
+					<td>
+						<input type="button" value="/" onclick="getNum('/')">
+					</td>
+				</tr>
+				<!-- 数字按钮 -->
+			</table>
+		</form>
+	</div>
+</body>
+</html>

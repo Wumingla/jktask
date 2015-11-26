@@ -1,0 +1,52 @@
+*{
+	margin:0;
+	padding: 0;
+}
+/*重设内外边距*/
+.wrapper{
+	width: 300px;
+	height: 450px;
+	background: #8694CD ;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	margin-left: -150px;
+	margin-top: -225px;
+	padding: 10px;
+	box-shadow: 5px 5px 5px #ccc;
+}
+/*容器*/
+.wrapper table tr th input{
+	text-align: right;
+	height: 50px;
+	width: 195px;
+	padding: 10px;
+	border: none;
+	font-size: 44px;
+	border-radius: 5px;
+}
+/*显示屏*/
+.wrapper table tr td input{
+	height:80px;
+	width: 65px;
+	margin:5px;
+	background:#BCDDF3;
+	color:#222;
+	border:none;
+	border-radius: 5px;
+	font-size: 24px;
+	cursor: pointer;
+}
+/*输入按钮*/
+.wrapper table tr th div input{
+	width: 65px;
+	height: 70px;
+	border: none;
+	text-align: center;
+	background: #BCDDF3;
+	color: #222;
+	font-size: 24px;
+	border-radius: 5px;
+	cursor: pointer;
+}
+/*重设按钮*/
