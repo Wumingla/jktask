@@ -1,0 +1,189 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	background: #f3f2f3;
+}
+.header{
+	background: #fff;
+	border-bottom: 1px solid #ebebeb;
+	box-shadow: 0 0 3px rgba(150,150,150,.2);
+	min-width: 1220px;
+	width: 100%;
+	padding-bottom: 8px;
+	height: 124px;
+}
+.h_user{
+	position: absolute;
+	top: 4px;
+	right: 10px;
+	font-size: 12px;
+	font-family: Arial;
+	text-align: right;
+	line-height: 20px;
+	height: 20px;
+	cursor: pointer;
+	z-index: 10;
+}
+.h_user a{
+	text-decoration: none;
+	margin-right: 7px;
+	color: #555;
+}
+/*用户信息*/
+.h_tab{
+	position: relative;
+	margin-left: 194px;
+	padding-top: 12px;
+	height: 30px;
+	line-height: 30px;
+	overflow: hidden;
+}
+.h_tab a{
+	color: #555;
+	margin-right: 5px;
+	font-size: 14px;
+	text-decoration: none;
+	font-family: 'Microsoft YaHei';
+}
+.h_tab a span{
+	font-weight: bold;
+}
+/*标头导航*/
+.h_logo{
+	float: left;
+	position: relative;
+	top: 0;
+	margin:0 16px 0 40px;
+	width: 137px;
+	height: 46px;
+}
+.h_logo img{
+	width: 137px;
+	height: 46px;
+	position: relative;
+	top: -17px;
+}
+/*logo*/
+.h_search{
+	position: relative;
+	float: left;
+	height: 34px;
+	width: 585px;
+}
+.h_search form{
+	height: 32px;
+	width: 453px;
+	border:1px solid #b8b8b8;
+	border-right: none;
+	position: relative;
+}
+.h_search form img{
+	display: inline-block;
+	width: 18px;
+	height: 16px;
+	position: absolute;
+	top: 10px;
+	right:6px;
+	cursor: pointer;
+}
+#h_s_text{
+	height: 32px;
+	width: 100%;
+	padding-left: 8px;
+	border: none;
+	outline: none;
+	font-size: 18px;
+}
+#h_s_btn{
+	position: absolute;
+	top: -1px;
+	right: 0px;
+	height: 34px;
+	width: 100px;
+	border: 1px solid #ccc;
+	margin-right: -100px;
+	outline: none;
+	cursor: pointer;
+	background-image: url(img/btn.png);
+	background-position: 0 0;
+	font-size: 16px;
+	line-height: 34px;
+	color: #333;
+	font-family: 'Hiragino Sans GB','Microsoft Yahei';
+}
+/*搜索*/
+.h_filter{
+	height: 34px;
+	font-size: 12px;
+	line-height: 34px;
+	color: #00c;
+}
+.h_filter span:hover{
+	text-decoration: underline;
+	cursor: pointer;
+}
+.h_filter i{
+	position: relative;
+	top: 2px;
+	display: inline-block;
+	width: 13px;
+	height: 13px;
+	background-image: url(img/filter.png);
+	background-position:0 0;
+	cursor: pointer;
+}
+/*相关筛选条件*/
+.h_infoBar{
+	height: 26px;
+	padding: 5px 0 5px 40px;
+	margin-top: 10px;
+	line-height: 26px;
+}
+.h_infoBar i{
+	display: inline-block;	
+	position: relative;
+	top: 1px;
+	height: 19px;
+	width: 16px;
+	background-image: url(img/infob.png);
+	background-position: -191px -334px;
+}
+.h_infoBar span{
+	position: relative;
+	display: inline-block;
+	height: 26px;
+	font-size: 14px;
+	color: #666;
+}
+.h_infoBar a{
+	display: inline-block;
+	margin-right: 25px;
+	font-size: 14px;
+	color: #00c;
+	text-decoration: none;
+}
+/*相关信息*/
+#container{
+	padding-left: 40px;
+	float: left;
+	position: relative;
+}
+.box{
+	position: relative;
+	float: left;
+}
+.content{	
+	border: 1px solid #f3f2f3;
+	padding: 10px;
+	background: #f3f2f3;
+}
+.content img{
+	width: 190px;
+	height: auto;
+	border: 1px solid #ccc;
+	box-shadow: 5px 5px 5px #ccc;
+	cursor: pointer;
+}
+/*图片流*/
