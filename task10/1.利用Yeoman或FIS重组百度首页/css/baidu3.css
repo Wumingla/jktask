@@ -1,0 +1,1184 @@
+*{
+ margin: 0;
+ padding: 0;
+}
+html,body,.wrapper{
+  height: 100%;
+  min-height: 660px;
+}
+body{
+ font-size:12px;
+ font-family:arial; 
+}
+.wrapper{
+  min-width: 810px;
+  min-height: 600px;
+  height: 100%;
+  position: relative;
+  display: block;
+}
+.header{
+ height: 34px;
+ position: relative;
+ border-bottom: 1px solid #ebebeb;
+} 
+.h_weather{
+  display: inline-block;
+  float: left;
+  margin-left: 12px;
+  cursor: pointer;
+}
+.h_weather span{
+  display: inline-block;
+  height: 34px;
+  line-height: 34px;
+  margin-right: 7px;
+  color: #555;
+}
+.h_weather img{
+  width: 18px;
+  height: 18px;
+  position: relative;
+  top: 5px;
+  right: 5px;
+}
+.h_weather .h_w_green{
+  color: #BEDE0F;
+  font-weight: bold;
+}
+/*天气*/
+.h_skin{
+  display: inline-block;
+  float: left;
+}
+.h_skin span{
+  display: inline-block;
+  height: 34px;
+  line-height: 34px;
+  margin-right: 13px;
+}
+.h_skin span a{
+  color: #333;
+}
+/*皮肤*/
+.h_nav ul{
+  list-style-type: none;
+  margin: 10px 12px 5px 10px;
+  padding: 0;
+  font-family: Tahoma;
+  font-size: 13px;
+  float: right;
+}
+.h_nav li{
+ display: inline;
+ padding-left: 15px
+}
+.h_nav ul li a{
+  font-weight: bold;
+  color: #333;
+}
+#h_n_set{
+  font-weight: normal;
+}
+#h_n_more{
+  padding: 3px;
+  background:#38f;
+  color: #FFFFFF;
+  text-decoration:none;
+}
+#h_n_userinfo{
+  font-weight: normal;
+}
+/*导航*/
+#h_set{
+  display: inline-block;
+  width: 60px;
+  height: 104px;
+  border:1px solid #d1d1d1;
+  box-shadow:1px 1px 5px #d1d1d1;
+  position: absolute;
+  top: 35px;
+  right: 74px;
+  text-align: center;
+  display: none;
+}
+#h_set span,#h_user span{
+  display: inline-block;
+  height: 26px;
+  line-height: 26px;
+  color: #333;
+  width: 100%;
+  cursor: pointer;
+}
+#h_set span:hover,#h_user span:hover{
+  color: #fff;
+  background: #38f;
+}
+/*设置*/
+#h_user{
+  width: 80px;
+  height: 130px;
+  border:1px solid #d1d1d1;
+  box-shadow:1px 1px 5px #d1d1d1;
+  position: absolute;
+  top: 35px;
+  right: 134px;
+  text-align: center;
+  display: none;
+}
+/*用户设置*/
+#h_more{
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 85px;
+  height: 598px;
+  border:1px solid #ebebeb;
+  text-align: center;
+  background: #fff;
+  display: none;
+}
+#h_more a{
+  display: inline-block;
+  width: 66px;
+  height: 76px;
+  border-bottom: #f0f0f0 1px solid;
+  text-decoration: none;
+  text-align: center;
+  color: #666;
+}
+#h_more a:hover{
+  text-decoration: underline;
+  color: #38f;
+}
+#h_more p{
+  display: inline-block;
+  font-size: 13px;
+  width: 66px;
+  height: 16px;
+  padding: 10px 0;
+  border-bottom: #f0f0f0 1px solid;
+}
+#h_more img{
+  display: inline-block;
+  width: 36px;
+  height: 36px;
+  padding:10px 15px 5px 15px;
+}
+/*更多产品*/
+#h_rain{
+  display: inline-block;
+  width: 584px;
+  height: 203px;
+  position: absolute;
+  border: 1px solid #e3e3e3;
+  top: 35px;
+  left: 0px;
+  background: #fff;
+  z-index: 100;
+  display: none;
+}
+.rainTop{
+  display: inline-block;
+  width: 547px;
+  height: 40px;
+  margin:0 19px;
+  border-bottom:1px solid #e3e3e3; 
+}
+.rainTop span{
+  display: inline;
+  height: 40px;
+  line-height: 40px;
+  font-size: 12px;
+  color: #666;
+  cursor: default;
+  margin-right: 10px;
+}
+.rainTop span a{
+  color: #38f;
+  text-decoration: none;
+}
+.rainTop  span h4{
+  float: right;
+  margin-right: 10px;
+  font-size: 12px;
+  font-weight: normal;
+  cursor: pointer;
+}
+#h_rain ul li{
+  display: inline-block;
+  width: 105px;
+  height: 146px;
+  text-align: center;
+  float: left;
+  color: #666;
+}
+#h_rain ul li :hover{
+  color: #38f;
+  cursor: pointer;
+}
+#h_rain ul li p{
+  line-height: 18px;
+  font-size: 12px;
+}
+#h_rain ul li span{
+  display: block;
+  height: 34px;
+  line-height: 34px;
+}
+#h_rain ul .rainToday{
+  width: 161px;
+  font-weight: bold;
+}
+/*今天天气*/
+.searcher{
+  margin-top: 32px;
+  text-align: center;
+}
+.searcher img{
+  width:270px;
+  height:129px;
+}
+/*logo*/
+.searcher form{
+  width: 638px;
+  height: 38px;
+  border:1px solid #d8d8d8;
+  position: relative;
+  margin: 0 auto;
+}
+.searcher form:hover{
+  border-color: #38f;
+}
+.s_text{
+  height: 20px;
+  padding: 9px 7px;
+  border: none;
+  line-height: 20px;
+  font-size: 14px;
+  width: 522px;
+  outline: none;
+  float: left;
+}
+.s_click{
+  width: 102px;
+  height: 40px;
+  position: absolute;
+  top: -1px;
+  right: -1px;
+  border:none;
+  color: #fff;
+  background: #38f;
+  cursor: pointer;
+}
+.s_click:hover{
+  background: #3385FF;
+}
+/*搜索*/
+.main{
+  width: 910px;
+  height: 320px;
+  margin-top: 42px;
+  margin:0 auto;
+  margin-top: 42px;
+  position: relative;
+}
+.main_menus{
+  width: 80px;
+  height: 320px;
+  background: #e9eaea;
+  display: inline-block;
+  float: left;
+  position: relative;
+  color: #969494;
+}
+.main_right{
+  margin-left: 15px;
+  width: 815px;
+  height: 320px;
+  display: inline-block;
+  float: left;
+}
+.main_menus span{
+  display: inline-block;
+  width: 80px;
+  height: 35px;
+  line-height: 35px;
+  font-size: 14px;
+  text-align: center;
+}
+.main_menus span:hover{
+  background:#b3b6bb;
+  color: #fff;
+  cursor: pointer;
+  font-weight: bold;
+}
+.main_menus i{
+  display: inline-block;
+  width: 80px;
+  height: 32px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  background-image: url(../img/msicon.jpg?__sprite);
+}
+.main_menus i:hover{
+  background-image: url(../img/msicon1.jpg?__sprite);
+}
+.tabin{
+  background-image: url(../img/mbg.png?__sprite);
+  color: #fff;
+  font-weight: bold;
+}
+/*菜单栏*/
+.contentfirst{
+    width: 811px;
+    height: 318px;
+    display: none;
+    border: 1px solid #E9E9E9;
+}
+.content{
+  display: block;
+}
+/*右侧布局*/
+.m_n_top{
+  width: 811px;
+  height: 44px;
+  border-bottom: 1px solid #E9e9e9;
+  text-align:center;
+}
+.m_n_top span{
+  display: inline-block;
+  width: 86px;
+  color: #222;
+  font-size: 14px;
+  line-height: 44px;
+  cursor: pointer;
+}
+.m_n_t_on{
+  height: 43px;
+  font-weight: bold;
+  border-bottom: 2px solid #42A0FE;
+}
+.m_n_main{
+  width: 811px;
+  height: 258px;
+  margin-top: 15px;
+}
+.m_n_m_left{
+  display: inline-block;
+  width: 20px;
+  padding: 4px 7px 0 20px;
+  font-size: 12px;
+  line-height: 16px;
+  color: #999;
+  height: 81px;
+  float: left;
+}
+.m_n_m_right{
+  display: inline-block;
+  width: 764px;
+  height: 258px;
+  float: left;
+}
+.m_n_m_right a{
+  text-decoration: none;
+}
+.m_n_m_right a img{
+  width: 115px;
+  height: 70px;
+  margin-right: 8px;
+  margin-bottom: 14px;
+}
+.m_n_m_right a img:hover{
+  outline:#42A0FE solid 2px;
+  cursor: pointer;
+}
+/*推荐导航*/
+.mhidden{
+  display: none;
+}
+.mblock{
+  display: block;
+}
+.mynav{
+  text-align: center;
+  position: relative;
+}
+.mynav img{
+  position: relative;
+  top: 60px;
+  cursor: pointer;
+}
+/*我的导航*/
+.news_left{
+  display: inline-block;
+  width: 425px;
+  height: 318px;
+  float: left;
+}
+.news_right{
+  display: inline-block;
+  width: 350px;
+  height: 318px;
+  margin-left: 30px;
+  float: left;
+}
+.news_maxphoto{
+  width: 425px;
+  height: 260px;
+  background: #ccc;
+  position: relative;
+}
+.news_miniphoto{
+  width: 410px;
+  height: 42px;
+  background: #191919;
+  padding: 8px 0 8px 15px;
+}
+.news_miniphoto span{
+  display: inline-block;
+  margin-right: 8px;
+  height: 42px;
+  width: 70px;
+}
+.news_miniphoto span img{
+  width: 68px;
+  height: 40px;
+  border:1px solid #191919;
+  cursor: pointer;
+}
+.news_maxphoto div img{
+  width: 425px;
+  height: 260px;
+}
+.whenclick{
+  outline:#42A0FE solid 2px;
+}
+.news_maxphoto div a{
+  display: inline-block;
+  width: 425px;
+  height: 28px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.3);
+  line-height: 28px;
+  color: #E6E6E6;
+  font-size: 18px;
+  text-decoration: none;
+  text-indent: 15px;
+}
+/*新闻照片*/
+.n_rightTop{
+  width: 325px;
+  height: 35px;
+  border-bottom: 1px solid #e9e9e9;
+  margin-top: 15px;
+  position: relative;
+}
+.n_rightTop span{
+  display: inline-block;
+  width: 108px;
+  height: 33px;
+  border-bottom: 2px solid #389cff;
+  color: #000;
+  text-align: center;
+  line-height: 33px;
+  font-size: 14px;
+  position: relative;
+}
+.n_rightTop a{
+  display: inline-block;
+  height: 35px;
+  color:#222;
+  cursor: pointer;
+  text-decoration: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 12px;
+  line-height: 35px;
+}
+.n_rightTop a:hover{
+  color: #389cff;
+}
+.n_rightTop span i{
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  background-image: url(../img/sbt.png?__sprite);
+  background-position: -25px -90px;
+  position: relative;
+  top: 3px;
+  margin-right: 5px;
+}
+.n_rightTop a i{
+  display: inline-block;
+  width: 15px;
+  height: 24px;
+  background-image: url(../img/sbt.png?__sprite);
+  background-position: -19px -40px;
+  position: relative;
+  top: 8px;
+  margin-right: 5px;
+}
+.news_right ul{
+  margin-top: 15px;
+  margin-left: 10px;
+}
+.news_right ul li{
+  line-height: 30px;
+  float: left;
+  width: 170px;
+  height: 30px;
+  font-size: 14px;
+  color: #222;
+  cursor: pointer;
+}
+.news_right ul li:hover{
+  color: #389cff;
+  text-decoration: underline;
+}
+/*新闻信息*/
+.musicLeft{
+  display: inline-block;
+  float: left;
+  width: 121px;
+  height: 300px;
+  padding: 18px 22px 0 24px;
+}
+.l_zj{
+  width: 119px;
+  height: 119px;
+  border-radius: 50%;
+  position: relative;
+  background-image: url(../img/musicp.jpg?__sprite);
+  background-position: -10px 0px;
+}
+.l_zj i{
+  display: inline-block;
+  width: 34px;
+  height: 36px;
+  background-image: url(../img/msbt.png?__sprite);
+  background-position: -3px -110px;
+  position: relative;
+  top: 47px;
+  left: 47px;
+}
+.musicMid{
+  display: inline-block;
+  width: 406px;
+  height: 297px;
+  padding-top: 19px;
+  float: left;
+}
+.musicName{
+  line-height: 27px;
+  font-size: 20px;
+  color: #000;
+  margin-right: 15px;
+}
+.musicWho{
+  font-size: 14px;
+  line-height: 33px;
+  color: #222;
+}
+.musicNow{
+  display: inline-block;
+  width: 229px;
+  height: 24px;
+  border-bottom: 4px solid #ccc;
+}
+.musicTime{
+  color: #A0A3A8;
+  margin-left: 5px;
+  cursor: pointer;
+}
+.musicTime i{
+  display: inline-block;
+  width: 18px;
+  height: 15px;
+  position: relative;
+  top: 2px;
+  left:10px;
+  background-image: url(../img/msbt.png?__sprite);
+  background-position: 0 -182px;
+  cursor: pointer;
+}
+.musicDown{
+  display: inline-block;
+  width: 50px;
+  height: 18px;
+  border: 1px solid #dbdbdb;
+  position: relative;
+  left: 20px;
+  line-height: 18px;
+  text-align: center;
+  background-image: url(../img/msbt.png?__sprite);
+  background-position: -384px -218px;
+  text-indent: 15px;
+}
+.musicDown:hover{
+  border-color: #389cff;
+  color: #389cff;
+  cursor: pointer;
+}
+.midIfo2{
+  margin-top: 15px;
+  margin-bottom: 20px;
+}
+.midIfo2 span{
+  display: inline-block;
+  width: 34px;
+  height: 36px;
+  margin-right: 5px;
+  background-image: url(../img/msbt.png?__sprite);
+  cursor: pointer;
+}
+.musicPlay{
+  background-position: -3px -110px;
+}
+.musicLove{
+  background-position: -39px -110px;
+}
+.musicDelete{
+  background-position: -75px -110px;
+}
+.musicNext{
+  background-position: -111px -110px;
+}
+.midIfo3{
+  box-sizing:border-box;
+  display: inline-block;
+  width: 360px;
+  height: 130px;
+  overflow-y: scroll;
+  text-align: left;
+  line-height: 24px;
+  font-size: 14px;
+  color: #222;
+}
+.musicRight{
+  display: inline-block;
+  width: 237px;
+  height: 292px;
+  padding-top: 24px;
+}
+.musicRightTop{
+  width: 196px;
+  height: 24px;
+  padding:0 0 9px 30px;
+  font-size: 20px;
+}
+.musicRight ul li{
+  display: inline-block;
+  width: 90px;
+  height: 30px;
+  line-height: 30px;
+  text-align: left;
+  float: left;
+  font-size: 14px;
+  text-indent: 30px;
+  position: relative;
+  margin-right: 18px;
+  cursor: pointer;
+}
+.musicRight ul li:hover{
+  color: #389CFF;
+}
+.myMusic{
+  background-image: url(../img/msbt.png?__sprite);
+  background-position: -276px -122px;
+}
+.loveMusic i{
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  top: 7px;
+  left: 10px;
+  background-image: url(../img/msbt.png?__sprite);
+  background-position: -386px -128px;
+}
+.listenMusic i{
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  top: 7px;
+  left: 5px;
+  background-image: url(../img/msbt.png?__sprite);
+  background-position: -281px -218px;
+}
+.listenMusic{
+  background: #389CFF;
+  color: #fff;
+}
+.musicRight ul .listenMusic:hover{
+  color: #fff;
+}
+/*音乐*/
+.shopTop{
+  height: 40px;
+  width: 771px;
+  padding: 0 20px;
+  border-bottom: 1px solid #e9e9e9;
+}
+.shopTop span{
+  display: inline-block;
+  height: 38px;
+  line-height: 38px;
+  padding: 0 15px;
+  font-size: 14px;
+  color: #222;
+  cursor: pointer;
+  float: left;
+}
+.shopTop span:hover{
+  font-weight: bold;
+  border-bottom: 2px solid #389CFF;
+}
+/*购物布局*/
+.shopMainLeft{
+  display: inline-block;
+  width: 594px;
+  height: 255px;
+  padding-top: 20px;
+  float: left;
+}
+.shopMainRight{
+  display: inline-block;
+  width: 215px;
+  height: 277px;
+  float: left;
+}
+.shopProduct{
+  display: inline-block;
+  width: 177px;
+  height: 108px;
+  margin-left: 18px;
+  margin-bottom: 20px;
+  position: relative;
+  cursor: pointer;
+}
+.shopProduct img{
+  width: 177px;
+  height: 108px;
+}
+.Sbottom{
+  display: inline-block;
+  width: 177px;
+  height: 28px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  font-size: 12px;
+  line-height: 28px;
+  text-align: center;
+  color: #fff;
+}
+.goods{
+  display: inline-block;
+  width: 125px;
+  height: 28px;
+  float: left;
+  background: #A0A3A8;
+}
+.price{
+  display: inline-block;
+  width: 52px;
+  height: 28px;
+  float: left;
+  background:#ff3e5e;
+  font-weight: bold;
+}
+.MainRightTop{
+  display: inline-block;
+  margin: 20px 20px 0 20px;
+  padding-bottom: 8px;
+  width: 175px;
+  height: 48px;
+  border-bottom: 1px solid #e9e9e9;
+}
+.MainRightTop span{
+  display: inline-block;
+  height: 16px;
+  line-height: 16px;
+  font-size: 13px;
+  font-weight: bold;
+  cursor: default;
+}
+.MainRightTop span i{
+  display: inline-block;
+  width: 40px;
+  height: 16px;
+  background-image: url(../img/shop.png?__sprite);
+  position: relative;
+  top: 3px;
+  margin-right: 5px;
+}
+.MainRightTop p{
+  display: inline-block;
+  height: 28px;
+  line-height: 28px;
+  font-size: 12px;
+  color: #38f;
+  position: relative;
+  top: 5px;
+  cursor: pointer;
+}
+.MainRightTop span:hover,.MainRightTop p:hover,{
+  text-decoration: underline;
+  cursor: pointer;
+}
+.shopMainRight ul{
+  margin-top: 15px;
+  margin-left: 20px;
+  float: left;
+}
+.shopMainRight ul p{
+  font-size: 14px;
+  font-weight: bold;
+  padding-bottom: 4px;
+  cursor: pointer;
+}
+.shopMainRight ul li{
+  display: inline-block;
+  height: 24px;
+  line-height: 24px;
+  float: left;
+  margin-right: 11px;
+  width: 52px;
+  color: #222;
+  list-style: none;
+}
+.shopMainRight ul li:hover{
+  color:#38f;
+  text-decoration: underline;
+  cursor: pointer;
+}
+.shopMainRight ul li span{
+  color: #38f;
+}
+/*优选、美食、娱乐、酒店、喜欢*/
+.movieLeft{
+  display: inline-block;
+  width: 660px;
+  height: 255px;
+  padding-top: 20px;
+  float: left;
+}
+.movieRight{
+  display: inline-block;
+  width: 150px;
+  height: 277px;
+  float: left;
+}
+.movieMain{
+  display: inline-block;
+  width: 110px;
+  height: 236px;
+  margin: 0 0 20px 20px;
+  border:1px solid #e9e9e9;
+  float: left;
+  text-align: center;
+}
+.movieMain img{
+  width: 110px;
+  height: 156px;
+}
+.movieMain h3{
+  display: inline-block;
+  width: 100px;
+  height: 20px;
+  padding: 10px 5px 0 5px;
+  font-size: 12px;
+  font-weight: normal;
+  line-height: 20px;
+  color: #222;
+}
+.movieMain p{
+  font-size: 12px;
+  font-weight: bold;
+  color: #ff4683;
+  margin:4px auto;
+}
+.movieMain p i{
+  display: inline-block;
+  width: 60px;
+  height: 11px;
+  background-image: url(../img/star.png?__sprite);
+  margin-right: 5px;
+}
+.movieMain span{
+  display: inline-block;
+  width: 84px;
+  height: 20px;
+  line-height: 20px;
+  font-size: 12px;
+  color: #fff;
+  background: #ff8300;
+  cursor: pointer;
+}
+.movieMain span:hover{
+  background-color: #d26c00;
+}
+.movieRightTop{
+  display: inline-block;
+  width: 130px;
+  height: 108px;
+  padding: 21px 0 0 20px;
+}
+.movieRightTop p{
+  font-size: 12px;
+  line-height: 22px;
+}
+.movieRightTop p span{
+  color: #38f;
+}
+.movieRight ul{
+  margin-top: 15px;
+  margin-left: 20px;
+  float: left;
+}
+.movieRight ul p{
+  font-size: 14px;
+  font-weight: bold;
+  padding-bottom: 4px;
+  cursor: pointer;
+}
+.movieRight ul li{
+  display: inline-block;
+  height: 24px;
+  line-height: 24px;
+  float: left;
+  margin-right: 11px;
+  width: 52px;
+  color: #222;
+  list-style: none;
+}
+.movieRight ul li:hover{
+  color:#38f;
+  text-decoration: underline;
+  cursor: pointer;
+}
+.movieRight ul li span{
+  color: #38f;
+}
+/*购物*/
+.videoTop{
+  height: 40px;
+  width: 771px;
+  padding: 0 20px;
+  border-bottom: 1px solid #e9e9e9;
+}
+.videoTop span{
+  display: inline-block;
+  height: 38px;
+  line-height: 38px;
+  padding: 0 15px;
+  font-size: 14px;
+  color: #222;
+  cursor: pointer;
+  float: left;
+}
+.videoTop span:hover{
+  font-weight: bold;
+  border-bottom: 2px solid #389CFF;
+}
+/*视频头部*/
+.videoMainLeft{
+  display: inline-block;
+  width: 491px;
+  height: 233px;
+  padding:20px 0 20px 20px;
+  position: relative;
+  float: left;
+}
+.videochoose{
+  display: inline-block;
+  position: absolute;
+  top: 3px;
+  right: 10px;
+}
+.videochoose span{
+  display: inline-block;
+  width: 7px;
+  height: 7px;
+  border: 1px solid #5f5f5f;
+  background: #5f5f5f;
+  margin:3px 0 0 3px;
+  cursor: pointer;
+}
+.videochoose .whenChooseOn{
+  background: #fff;
+}
+.video{
+  width: 490px;
+  height: 233px;
+}
+.video div img{
+  width: 153px;
+  height: 233px;
+  margin-right: 10px;
+  float: left;
+  cursor: pointer;
+}
+.vhidden{
+  display: none;
+}
+.vblock{
+  display: block;
+}
+/*视频区左侧*/
+.videoMainRight{
+  display: inline-block;
+  width: 300px;
+  height: 253px;
+  float: left;
+  padding-top: 8px;
+}
+.videoMainRight p{
+  display: inline-block;
+  width: 270px;
+  height: 28px;
+  line-height: 28px;
+  position: relative;
+  left: 20px;
+}
+.videoMainRight p em{
+  display: inline-block;
+  color: #fff;
+  line-height: 15px;
+  width: 15px;
+  height: 15px;
+  background: #8db9f5;
+  text-indent: 3px;
+}
+.videoMainRight a{
+  font-size: 12px;
+  text-decoration: none;
+  color: #222;
+}
+.videoMainRight span{
+  float: right;
+  color: #ff6c00;
+}
+.videoMainRight a:hover{
+  text-decoration: underline;
+  color: #38f;
+}
+/*猜你喜欢*/
+.shortVideo{
+  display: inline-block;
+  width: 481px;
+  height: 233px;
+  padding:20px 0 20px 20px;
+  position: relative;
+  float: left;
+}
+.shortVideoChoose,.gameChoose{
+  display: inline-block;
+  position: absolute;
+  top: 3px;
+  right: 10px;
+}
+.shortVideoChoose span,.gameChoose span{
+  display: inline-block;
+  width: 7px;
+  height: 7px;
+  border: 1px solid #5f5f5f;
+  background: #5f5f5f;
+  margin:3px 0 0 3px;
+  cursor: pointer;
+}
+.shortVideoChoose .whenChooseOn,.gameChoose .whenChooseOn{
+  background: #fff;
+}
+.videoPhoto div img,.gameVideo div img{
+  width: 481px;
+  height: 233px;
+}
+/*短视频*/
+.zyChoose,.tvChoose,.movieChoose,.dmChoose{
+  display: inline-block;
+  position: absolute;
+  top: 3px;
+  right: 10px;
+}
+.zyChoose span,.tvChoose span,.movieChoose span,
+.dmChoose span{
+  display: inline-block;
+  width: 7px;
+  height: 7px;
+  border: 1px solid #5f5f5f;
+  background: #5f5f5f;
+  margin:3px 0 0 3px;
+  cursor: pointer;
+}
+.zyChoose .whenChooseOn,.tvChoose .whenChooseOn,
+.movieChoose .whenChooseOn,.dmChoose .whenChooseOn{
+  background: #fff;
+}
+.zyVideo,.tvVideo,.movieVideo{
+  display: inline-block;
+  width: 491px;
+  height: 233px;
+  position: relative;
+  float: left;
+}
+.zyVideo div img,.tvVideo div img,.movieVideo div img,
+.dmVideo div img{
+  width: 153px;
+  height: 233px;
+  margin-right: 10px;
+  float: left;
+  cursor: pointer;
+}
+/*综艺视频、电视剧*/
+
+
+
+
+
+
+
+
+
+
+
+
+.footer{
+  width: 100%;
+  padding-bottom: 8px;
+  position: absolute;
+  bottom: 0;
+  text-align: center;
+}
+.footer span{
+  word-spacing:3px;
+  color: #ccc;
+  font-size: 12px;
+  margin-right: 12px;
+  cursor: default;
+}
+.footer span a{
+  color: #ccc;
+  text-decoration: none;
+  cursor: pointer;
+}
+.footer span a:hover{
+  text-decoration: underline;
+}
+.footer i{
+  display: inline-block;
+  width: 14px;
+  height: 16px;
+  background-image: url(../img/ficon.png?__sprite);
+  position: relative;
+  top: 2px;
+  left: -10px;
+}
+/*底部内容*/
